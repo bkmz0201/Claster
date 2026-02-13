@@ -1,0 +1,1 @@
+{"version":3,"file":"block.d.ts","sourceRoot":"","sources":["../../../../../src/components/affine/onboarding/switch-widgets/block.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,kBAAkB,EAAE,qBAAqB,EAAE,MAAM,UAAU,CAAC;AAG1E,UAAU,oBAAqB,SAAQ,qBAAqB;IAC1D,IAAI,EAAE,kBAAkB,CAAC;CAC1B;AAED,eAAO,MAAM,eAAe,GAAI,wHAa7B,oBAAoB,4CA6CtB,CAAC"}

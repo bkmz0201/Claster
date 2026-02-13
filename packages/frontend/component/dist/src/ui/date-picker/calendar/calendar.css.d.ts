@@ -1,0 +1,37 @@
+export declare const vars: {
+    gapX: `var(--${string})` | `var(--${string}, ${string})`;
+    gapY: `var(--${string})` | `var(--${string}, ${string})`;
+    cellFontSize: `var(--${string})` | `var(--${string}, ${string})`;
+    cellSize: `var(--${string})` | `var(--${string}, ${string})`;
+};
+export declare const spacer: string;
+export declare const spacerX: string;
+export declare const basicInteractive: string;
+export declare const hoverInteractive: string;
+export declare const focusInteractive: string;
+export declare const disabledInteractive: string;
+export declare const interactive: string;
+export declare const basicCell: string;
+export declare const calendarRoot: string;
+export declare const calendarWrapper: string;
+export declare const calendarHeader: string;
+export declare const headerLayoutCell: string;
+export declare const headerLayoutCellOrigin: string;
+export declare const calendarHeaderTriggerButton: string;
+export declare const headerNavButtons: string;
+export declare const headerNavGapFallback: string;
+export declare const headerNavToday: string;
+export declare const monthViewBody: string;
+export declare const monthViewRow: string;
+export declare const monthViewHeaderCell: string;
+export declare const monthViewBodyCell: string;
+export declare const monthViewBodyCellInner: string;
+export declare const yearViewBody: string;
+export declare const yearViewRow: string;
+export declare const yearViewBodyCell: string;
+export declare const yearViewBodyCellInner: string;
+export declare const decadeViewBody: string;
+export declare const decadeViewRow: string;
+export declare const decadeViewBodyCell: string;
+export declare const decadeViewBodyCellInner: string;
+//# sourceMappingURL=calendar.css.d.ts.map

@@ -1,0 +1,11 @@
+import { DividerBlockHtmlAdapterExtension } from './html.js';
+import { DividerBlockMarkdownAdapterExtension } from './markdown.js';
+import { DividerBlockNotionHtmlAdapterExtension } from './notion-html.js';
+import { DividerBlockPlainTextAdapterExtension } from './plain-text.js';
+export const DividerBlockAdapterExtensions = [
+    DividerBlockHtmlAdapterExtension,
+    DividerBlockMarkdownAdapterExtension,
+    DividerBlockNotionHtmlAdapterExtension,
+    DividerBlockPlainTextAdapterExtension,
+];
+//# sourceMappingURL=extension.js.map

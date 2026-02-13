@@ -1,0 +1,1 @@
+{"version":3,"file":"invoices.js","sourceRoot":"","sources":["../../../../src/modules/cloud/services/invoices.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,QAAQ,EAAE,MAAM,sBAAsB,CAAC;AAEhD,MAAM,OAAO,eAAgB,SAAQ,OAAO;IAA5C;;QACE,aAAQ,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CAAC,QAAQ,CAAC,CAAC;IACnD,CAAC;CAAA"}

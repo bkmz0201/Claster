@@ -1,0 +1,1 @@
+{"version":3,"file":"rect-helper.d.ts","sourceRoot":"","sources":["../../src/helpers/rect-helper.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,IAAI,EAAE,MAAM,wBAAwB,CAAC;AAO9C,OAAO,KAAK,EAAE,sBAAsB,EAAE,MAAM,mBAAmB,CAAC;AAOhE,qBAAa,UAAU;IA8ET,QAAQ,CAAC,MAAM,EAAE,sBAAsB;IA7EnD,OAAO,CAAC,QAAQ,CAAC,iBAAiB,CAkChC;IAEF,mBAAmB,QAAO,IAAI,GAAG,IAAI,CAuCnC;gBAEmB,MAAM,EAAE,sBAAsB;CACpD"}

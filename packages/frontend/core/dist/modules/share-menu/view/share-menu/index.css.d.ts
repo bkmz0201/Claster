@@ -1,0 +1,24 @@
+export declare const tabList: string;
+export declare const tab: string;
+export declare const content: string;
+export declare const divider: string;
+export declare const menuStyle: string;
+export declare const localMenuStyle: string;
+export declare const menuTriggerStyle: string;
+export declare const exportItemStyle: string;
+export declare const descriptionStyle: string;
+export declare const containerStyle: string;
+export declare const indicatorContainerStyle: string;
+export declare const columnContainerStyle: string;
+export declare const memberRowsStyle: string;
+export declare const exportContainerStyle: string;
+export declare const labelStyle: string;
+export declare const disableSharePage: string;
+export declare const localSharePage: string;
+export declare const cloudSvgContainer: string;
+export declare const shareLinkStyle: string;
+export declare const buttonContainer: string;
+export declare const button: string;
+export declare const shortcutStyle: string;
+export declare const generalAccessStyle: string;
+//# sourceMappingURL=index.css.d.ts.map

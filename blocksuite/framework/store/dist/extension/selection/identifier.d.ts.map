@@ -1,0 +1,1 @@
+{"version":3,"file":"identifier.d.ts","sourceRoot":"","sources":["../../../src/extension/selection/identifier.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,cAAc,CAAC;AAClD,OAAO,KAAK,EAAE,oBAAoB,EAAE,MAAM,SAAS,CAAC;AAEpD,eAAO,MAAM,mBAAmB,sVACqB,CAAC;AAEtD,wBAAgB,kBAAkB,CAChC,aAAa,EAAE,oBAAoB,GAClC,aAAa,CAMf"}

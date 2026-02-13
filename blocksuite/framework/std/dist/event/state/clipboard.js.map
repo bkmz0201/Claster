@@ -1,0 +1,1 @@
+{"version":3,"file":"clipboard.js","sourceRoot":"","sources":["../../../src/event/state/clipboard.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,MAAM,YAAY,CAAC;AAM1C,MAAM,OAAO,mBAAoB,SAAQ,YAAY;IAKnD,YAAY,EAAE,KAAK,EAA8B;QAC/C,KAAK,CAAC,KAAK,CAAC,CAAC;QAHN,SAAI,GAAG,gBAAgB,CAAC;QAK/B,IAAI,CAAC,GAAG,GAAG,KAAK,CAAC;IACnB,CAAC;CACF"}

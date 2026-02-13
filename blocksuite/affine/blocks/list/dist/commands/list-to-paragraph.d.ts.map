@@ -1,0 +1,1 @@
+{"version":3,"file":"list-to-paragraph.d.ts","sourceRoot":"","sources":["../../src/commands/list-to-paragraph.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAE/C,eAAO,MAAM,sBAAsB,EAAE,OAAO,CAC1C;IACE,EAAE,EAAE,MAAM,CAAC;IACX,aAAa,CAAC,EAAE,OAAO,CAAC;CACzB,EACD;IACE,eAAe,EAAE,MAAM,CAAC;CACzB,CA+BF,CAAC"}

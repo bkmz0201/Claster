@@ -1,0 +1,1 @@
+{"version":3,"file":"delete-account.d.ts","sourceRoot":"","sources":["../../../../src/modules/accounts/components/delete-account.tsx"],"names":[],"mappings":"AAYA,eAAO,MAAM,mBAAmB,GAAI,mDAMjC;IACD,KAAK,EAAE,MAAM,CAAC;IACd,IAAI,EAAE,OAAO,CAAC;IACd,OAAO,EAAE,MAAM,IAAI,CAAC;IACpB,QAAQ,EAAE,MAAM,IAAI,CAAC;IACrB,YAAY,EAAE,CAAC,IAAI,EAAE,OAAO,KAAK,IAAI,CAAC;CACvC,4CAoDA,CAAC"}

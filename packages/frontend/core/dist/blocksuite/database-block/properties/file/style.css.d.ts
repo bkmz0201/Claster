@@ -1,0 +1,23 @@
+export declare const iconPrimary: string;
+export declare const filePopoverContainer: string;
+export declare const filePopoverContent: string;
+export declare const uploadButton: string;
+export declare const fileInfoContainer: string;
+export declare const fileSizeInfo: string;
+export declare const upgradeLink: string;
+export declare const fileListContainer: string;
+export declare const fileItem: string;
+export declare const fileItemContent: string;
+export declare const fileName: string;
+export declare const menuButton: string;
+export declare const cellContainer: string;
+export declare const fileItemCell: string;
+export declare const fileItemImagePreview: string;
+export declare const imagePreviewIcon: string;
+export declare const filePreviewContainer: string;
+export declare const imagePreviewContainer: string;
+export declare const uploadContainer: string;
+export declare const uploadButtonStyle: string;
+export declare const uploadPopoverContainer: string;
+export declare const fileNameStyle: string;
+//# sourceMappingURL=style.css.d.ts.map

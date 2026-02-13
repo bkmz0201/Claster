@@ -1,0 +1,1 @@
+{"version":3,"file":"error-message.d.ts","sourceRoot":"","sources":["../../../../src/ui/error-message/error-message.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAI/B,eAAO,MAAM,YAAY,GAAI,yCAK1B,KAAK,CAAC,iBAAiB,CAAC;IACzB,MAAM,CAAC,EAAE,OAAO,CAAC;IACjB,KAAK,CAAC,EAAE,KAAK,CAAC,aAAa,CAAC;IAC5B,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB,CAAC,4CAaD,CAAC"}

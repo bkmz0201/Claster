@@ -1,0 +1,1 @@
+{"version":3,"file":"first-app-data.d.ts","sourceRoot":"","sources":["../../src/utils/first-app-data.ts"],"names":[],"mappings":"AACA,OAAO,kCAAkC,CAAC;AAS1C,OAAO,EAEL,KAAK,iBAAiB,EACvB,MAAM,sBAAsB,CAAC;AAE9B,wBAAsB,sBAAsB,CAC1C,iBAAiB,EAAE,iBAAiB,EACpC,OAAO,EAAE,MAAM,EACf,aAAa,EAAE,MAAM;;;GA+CtB;AAID,wBAAsB,kBAAkB,CAAC,iBAAiB,EAAE,iBAAiB;;;eAY5E"}

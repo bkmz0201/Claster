@@ -1,0 +1,1 @@
+{"version":3,"file":"pure-workspace-card.d.ts","sourceRoot":"","sources":["../../../../src/components/workspace-selector/workspace-card/pure-workspace-card.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,gCAAgC,CAAC;AAIxE,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,OAAO,CAAC;AAM5C,eAAO,MAAM,iBAAiB;uBAGP,iBAAiB;iBACvB,MAAM;cACT,OAAO;aACR,OAAO;kDA4DnB,CAAC"}

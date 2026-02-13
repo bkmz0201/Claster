@@ -1,0 +1,23 @@
+export declare const root: string;
+export declare const upper: string;
+export declare const upperLeft: string;
+export declare const upperRight: string;
+export declare const upperRow: string;
+export declare const nameLabel: string;
+export declare const spacer: string;
+export declare const description: string;
+export declare const audioIcon: string;
+export declare const controlButton: string;
+export declare const controls: string;
+export declare const button: string;
+export declare const progressContainer: string;
+export declare const progressBar: string;
+export declare const progressFill: string;
+export declare const timeDisplay: string;
+export declare const playbackRateDisplay: string;
+export declare const miniRoot: string;
+export declare const miniNameLabel: string;
+export declare const miniPlayerContainer: string;
+export declare const miniProgressContainer: string;
+export declare const miniCloseButton: string;
+//# sourceMappingURL=audio-player.css.d.ts.map

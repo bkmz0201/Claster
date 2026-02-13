@@ -1,0 +1,1 @@
+{"version":3,"file":"virtual-keyboard-service.js","sourceRoot":"","sources":["../../src/services/virtual-keyboard-service.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,uBAAuB,CAAC;AAqBzD,MAAM,CAAC,MAAM,uBAAuB,GAAG,gBAAgB,CAErD,yBAAyB,CAAC,CAAC;AAE7B,MAAM,UAAU,mCAAmC,CACjD,QAAiC;IAEjC,OAAO,MAAM,IAAI,QAAQ,IAAI,MAAM,IAAI,QAAQ,CAAC;AAClD,CAAC"}

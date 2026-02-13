@@ -1,0 +1,1 @@
+{"version":3,"file":"favorite.js","sourceRoot":"","sources":["../../../../src/modules/favorite/services/favorite.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,YAAY,EAAE,MAAM,2BAA2B,CAAC;AAEzD,MAAM,OAAO,eAAgB,SAAQ,OAAO;IAA5C;;QACE,iBAAY,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CAAC,YAAY,CAAC,CAAC;IAC3D,CAAC;CAAA"}

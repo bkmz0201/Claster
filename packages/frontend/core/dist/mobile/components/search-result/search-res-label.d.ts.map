@@ -1,0 +1,1 @@
+{"version":3,"file":"search-res-label.d.ts","sourceRoot":"","sources":["../../../../src/mobile/components/search-result/search-res-label.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,eAAe,EAAE,MAAM,kCAAkC,CAAC;AAIxE,MAAM,WAAW,mBAAmB;IAClC,IAAI,EAAE,eAAe,CAAC;CACvB;AACD,eAAO,MAAM,cAAc,GAAI,UAAU,mBAAmB,4CAU3D,CAAC"}

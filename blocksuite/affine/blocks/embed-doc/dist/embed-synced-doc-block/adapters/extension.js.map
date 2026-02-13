@@ -1,0 +1,1 @@
+{"version":3,"file":"extension.js","sourceRoot":"","sources":["../../../src/embed-synced-doc-block/adapters/extension.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,uCAAuC,EAAE,MAAM,WAAW,CAAC;AACpE,OAAO,EAAE,sCAAsC,EAAE,MAAM,eAAe,CAAC;AACvE,OAAO,EAAE,4CAA4C,EAAE,MAAM,iBAAiB,CAAC;AAE/E,MAAM,CAAC,MAAM,oCAAoC,GAAoB;IACnE,uCAAuC;IACvC,sCAAsC;IACtC,4CAA4C;CAC7C,CAAC"}

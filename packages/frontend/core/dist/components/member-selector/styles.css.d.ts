@@ -1,0 +1,20 @@
+export declare const membersSelectorInline: string;
+export declare const memberSelectorRoot: string;
+export declare const memberSelectorRootMobile: string;
+export declare const memberSelectorMenu: string;
+export declare const memberSelectorDoneButton: string;
+export declare const memberSelectorSelectedTags: string;
+export declare const memberDivider: string;
+export declare const searchInput: string;
+export declare const memberSelectorBody: string;
+export declare const memberSelectorScrollContainer: string;
+export declare const memberSelectorItem: string;
+export declare const memberSelectorEmpty: string;
+export declare const memberItem: string;
+export declare const memberItemInlineMode: string;
+export declare const memberItemListMode: string;
+export declare const memberItemLabel: string;
+export declare const memberItemRemove: string;
+export declare const memberItemAvatar: string;
+export declare const inlineMemberList: string;
+//# sourceMappingURL=styles.css.d.ts.map

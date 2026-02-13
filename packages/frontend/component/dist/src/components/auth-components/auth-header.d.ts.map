@@ -1,0 +1,1 @@
+{"version":3,"file":"auth-header.d.ts","sourceRoot":"","sources":["../../../../src/components/auth-components/auth-header.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,EAAE,EAAE,MAAM,OAAO,CAAC;AAIhC,eAAO,MAAM,UAAU,EAAE,EAAE,CAAC;IAC1B,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,CAAC,EAAE,MAAM,CAAC;IAClB,SAAS,CAAC,EAAE,MAAM,CAAC;CACpB,CAUA,CAAC"}

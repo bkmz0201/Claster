@@ -1,0 +1,1 @@
+{"version":3,"file":"observe-intersection.d.ts","sourceRoot":"","sources":["../../../src/utils/observe-intersection.ts"],"names":[],"mappings":"AAAA,KAAK,mBAAmB,GAAG;IACzB,QAAQ,EAAE,CAAC,MAAM,EAAE,yBAAyB,KAAK,IAAI,CAAC;IACtD,OAAO,EAAE,MAAM,IAAI,CAAC;CACrB,CAAC;AA0CF;;;;;;;;;;;;;;;GAeG;AACH,eAAO,MAAM,mBAAmB,GAC9B,SAAS,OAAO,EAChB,UAAU,mBAAmB,CAAC,UAAU,CAAC,eAa1C,CAAC"}

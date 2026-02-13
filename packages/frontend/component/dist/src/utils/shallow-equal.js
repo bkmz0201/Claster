@@ -1,0 +1,32 @@
+// credit: https://github.com/facebook/fbjs/blob/main/packages/fbjs/src/core/shallowEqual.js
+export function shallowEqual(objA, objB) {
+    if (Object.is(objA, objB)) {
+        return true;
+    }
+    if (typeof objA !== 'object' ||
+        objA === null ||
+        typeof objB !== 'object' ||
+        objB === null) {
+        return false;
+    }
+    const keysA = Object.keys(objA);
+    const keysB = Object.keys(objB);
+    if (keysA.length !== keysB.length) {
+        return false;
+    }
+    // Test for A's keys different from B.
+    for (const key of keysA) {
+        if (!Object.prototype.hasOwnProperty.call(objB, key) ||
+            !Object.is(objA[key], objB[key])) {
+            return false;
+        }
+    }
+    return true;
+}
+export const shallowUpdater = (newState) => (state) => {
+    if (state && shallowEqual(state, newState)) {
+        return state;
+    }
+    return newState;
+};
+//# sourceMappingURL=shallow-equal.js.map

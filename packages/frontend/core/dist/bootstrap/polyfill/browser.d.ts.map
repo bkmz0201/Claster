@@ -1,0 +1,1 @@
+{"version":3,"file":"browser.d.ts","sourceRoot":"","sources":["../../../src/bootstrap/polyfill/browser.ts"],"names":[],"mappings":"AAAA,OAAO,SAAS,CAAC;AACjB,OAAO,OAAO,CAAC;AACf,OAAO,WAAW,CAAC;AACnB,OAAO,oBAAoB,CAAC;AAC5B,OAAO,0BAA0B,CAAC;AAClC,OAAO,yBAAyB,CAAC;AACjC,OAAO,mBAAmB,CAAC"}

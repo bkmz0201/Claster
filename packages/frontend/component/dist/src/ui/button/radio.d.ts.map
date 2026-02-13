@@ -1,0 +1,1 @@
+{"version":3,"file":"radio.d.ts","sourceRoot":"","sources":["../../../../src/ui/button/radio.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EACV,mBAAmB,EACnB,eAAe,EAChB,MAAM,6BAA6B,CAAC;AAGrC,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,OAAO,CAAC;AAS3C;;;GAGG;AACH,eAAO,MAAM,WAAW;gBAEc,MAAM;qDAkB1C,CAAC;AAGH;;;GAGG;AACH,eAAO,MAAM,gBAAgB;YAEC,aAAa,CAAC,OAAO,CAAC;kDAUlD,CAAC"}

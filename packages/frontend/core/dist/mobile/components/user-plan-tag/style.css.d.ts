@@ -1,0 +1,2 @@
+export declare const tag: string;
+//# sourceMappingURL=style.css.d.ts.map

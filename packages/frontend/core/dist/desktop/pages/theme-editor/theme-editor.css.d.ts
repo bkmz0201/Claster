@@ -1,0 +1,19 @@
+export declare const root: string;
+export declare const sidebar: string;
+export declare const content: string;
+export declare const sidebarHeader: string;
+export declare const sidebarScrollable: string;
+export declare const mainHeader: string;
+export declare const mainScrollable: string;
+export declare const mainViewport: string;
+export declare const row: string;
+export declare const treeNode: string;
+export declare const treeNodeContent: string;
+export declare const treeNodeIconWrapper: string;
+export declare const treeNodeCollapseIcon: string;
+export declare const colorCell: string;
+export declare const colorCellRow: string;
+export declare const colorCellColor: string;
+export declare const colorCellValue: string;
+export declare const colorCellInput: string;
+//# sourceMappingURL=theme-editor.css.d.ts.map

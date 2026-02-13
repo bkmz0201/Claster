@@ -1,0 +1,21 @@
+export declare const container: string;
+export declare const header: string;
+export declare const scrollRoot: string;
+export declare const scrollViewport: string;
+export declare const itemList: string;
+export declare const listEmpty: string;
+export declare const listEmptyIconContainer: string;
+export declare const listEmptyTitle: string;
+export declare const listEmptyDescription: string;
+export declare const error: string;
+export declare const itemContainer: string;
+export declare const itemSkeletonContainer: string;
+export declare const itemDeleteButton: string;
+export declare const itemMain: string;
+export declare const itemDate: string;
+export declare const itemNotSupported: string;
+export declare const itemNameLabel: string;
+export declare const itemActionButton: string;
+export declare const itemNameLabelIcon: string;
+export declare const loadMoreIndicator: string;
+//# sourceMappingURL=list.style.css.d.ts.map

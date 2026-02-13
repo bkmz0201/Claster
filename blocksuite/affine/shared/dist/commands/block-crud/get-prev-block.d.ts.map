@@ -1,0 +1,1 @@
+{"version":3,"file":"get-prev-block.d.ts","sourceRoot":"","sources":["../../../src/commands/block-crud/get-prev-block.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAiB,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAc9E,eAAO,MAAM,mBAAmB,EAAE,OAAO,CACvC;IACE,oBAAoB,CAAC,EAAE,MAAM,CAAC;IAC9B,IAAI,CAAC,EAAE,MAAM,CAAC;CACf,EACD;IACE,SAAS,CAAC,EAAE,cAAc,CAAC;CAC5B,CAeF,CAAC"}

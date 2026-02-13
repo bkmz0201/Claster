@@ -1,0 +1,1 @@
+{"version":3,"file":"use-register-copy-link-commands.d.ts","sourceRoot":"","sources":["../../../../src/components/hooks/affine/use-register-copy-link-commands.tsx"],"names":[],"mappings":"AAMA,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,gCAAgC,CAAC;AAIxE,wBAAgB,2BAA2B,CAAC,EAC1C,aAAa,EACb,KAAK,GACN,EAAE;IACD,aAAa,EAAE,iBAAiB,CAAC;IACjC,KAAK,EAAE,MAAM,CAAC;CACf,QAoCA"}

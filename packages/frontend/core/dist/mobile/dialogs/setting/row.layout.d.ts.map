@@ -1,0 +1,1 @@
+{"version":3,"file":"row.layout.d.ts","sourceRoot":"","sources":["../../../../src/mobile/dialogs/setting/row.layout.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,iBAAiB,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAI1D,eAAO,MAAM,SAAS,GAAI,qCAKvB,iBAAiB,CAAC;IACnB,KAAK,EAAE,SAAS,CAAC;IACjB,IAAI,CAAC,EAAE,MAAM,CAAC;IACd,OAAO,CAAC,EAAE,MAAM,IAAI,CAAC;CACtB,CAAC,4CAsBD,CAAC"}

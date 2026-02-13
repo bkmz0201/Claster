@@ -1,0 +1,1 @@
+{"version":3,"file":"indent-block.d.ts","sourceRoot":"","sources":["../../src/commands/indent-block.ts"],"names":[],"mappings":"AAKA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAE/C;;;;;;;;;;;;;;;GAeG;AACH,eAAO,MAAM,WAAW,EAAE,OAAO,CAAC;IAChC,OAAO,CAAC,EAAE,MAAM,CAAC;IACjB,WAAW,CAAC,EAAE,OAAO,CAAC;CACvB,CA+CA,CAAC"}

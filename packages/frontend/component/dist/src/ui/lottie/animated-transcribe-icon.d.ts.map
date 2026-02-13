@@ -1,0 +1,1 @@
+{"version":3,"file":"animated-transcribe-icon.d.ts","sourceRoot":"","sources":["../../../../src/ui/lottie/animated-transcribe-icon.tsx"],"names":[],"mappings":"AAQA,MAAM,WAAW,2BAA2B;IAC1C,KAAK,EAAE,MAAM,GAAG,cAAc,CAAC;IAC/B,SAAS,CAAC,EAAE,MAAM,CAAC;IACnB,OAAO,CAAC,EAAE,CAAC,CAAC,EAAE,KAAK,CAAC,UAAU,KAAK,IAAI,CAAC;CACzC;AAED,eAAO,MAAM,sBAAsB,GAAI,gCAIpC,2BAA2B,4CA8D7B,CAAC"}

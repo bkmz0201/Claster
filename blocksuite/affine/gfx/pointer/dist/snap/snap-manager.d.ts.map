@@ -1,0 +1,1 @@
+{"version":3,"file":"snap-manager.d.ts","sourceRoot":"","sources":["../../src/snap/snap-manager.ts"],"names":[],"mappings":"AAGA,OAAO,EAIL,sBAAsB,EACvB,MAAM,qBAAqB,CAAC;AAE7B,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,gBAAgB,CAAC;AAElD,qBAAa,aAAc,SAAQ,sBAAsB;IACvD,OAAgB,GAAG,SAAkB;IAErC,IAAI,WAAW,IAGR,WAAW,CACjB;IAEQ,OAAO,IAAI,IAAI;CAqHzB"}

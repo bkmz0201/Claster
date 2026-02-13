@@ -1,0 +1,1 @@
+{"version":3,"file":"types.js","sourceRoot":"","sources":["../../../src/property-presets/number/types.ts"],"names":[],"mappings":"AAAA,OAAO,GAAG,MAAM,KAAK,CAAC;AAEtB,OAAO,EAAE,kBAAkB,EAAE,MAAM,sBAAsB,CAAC;AAE1D,MAAM,CAAC,MAAM,oBAAoB,GAAG,GAAG,CAAC,MAAM,CAAC;IAC7C,OAAO,EAAE,GAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;IAChC,MAAM,EAAE,kBAAkB;CAC3B,CAAC,CAAC"}

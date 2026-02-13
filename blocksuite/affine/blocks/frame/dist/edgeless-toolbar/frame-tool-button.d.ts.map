@@ -1,0 +1,1 @@
+{"version":3,"file":"frame-tool-button.d.ts","sourceRoot":"","sources":["../../src/edgeless-toolbar/frame-tool-button.ts"],"names":[],"mappings":"AAEA,OAAO,EAAa,UAAU,EAAE,MAAM,KAAK,CAAC;AAE5C,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;;AAE1C,qBAAa,uBAAwB,SAAQ,4BAA0B;IACrE,OAAgB,MAAM,0BAIpB;IAEO,IAAI,mBAAa;IAE1B,OAAO,CAAC,gBAAgB;IAOf,MAAM;CA0BhB"}

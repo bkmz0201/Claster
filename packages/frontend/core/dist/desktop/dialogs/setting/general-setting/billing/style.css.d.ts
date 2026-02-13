@@ -1,0 +1,27 @@
+export declare const subscription: string;
+export declare const history: string;
+export declare const historyContent: string;
+export declare const planCard: string;
+export declare const currentPlan: string;
+export declare const planAction: string;
+export declare const planPrice: string;
+export declare const billingFrequency: string;
+export declare const paymentMethod: string;
+export declare const planActionContainer: string;
+export declare const noInvoice: string;
+export declare const currentPlanName: string;
+export declare const subscriptionSettingSkeleton: string;
+export declare const billingHistorySkeleton: string;
+export declare const believerHeader: string;
+export declare const believerTitle: string;
+export declare const believerSubtitle: string;
+export declare const believerPriceWrapper: string;
+export declare const believerPrice: string;
+export declare const believerPriceCaption: string;
+export declare const cardNameLabelRow: string;
+export declare const cardName: string;
+export declare const cardLabelContainer: string;
+export declare const cardLabel: string;
+export declare const cardLabelIcon: string;
+export declare const managementInCard: string;
+//# sourceMappingURL=style.css.d.ts.map

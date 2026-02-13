@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/blocksuite/database-block/properties/index.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,uBAAuB,EAAE,MAAM,mBAAmB,CAAC;AAC5D,OAAO,EAAE,kBAAkB,EAAE,MAAM,aAAa,CAAC;AACjD,OAAO,EAAE,oBAAoB,EAAE,MAAM,eAAe,CAAC;AAErD,MAAM,CAAC,MAAM,iBAAiB,GAAgD;IAC5E,kBAAkB;IAClB,oBAAoB;IACpB,uBAAuB;CACxB,CAAC"}

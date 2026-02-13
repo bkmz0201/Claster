@@ -1,0 +1,1 @@
+{"version":3,"file":"split-callout.d.ts","sourceRoot":"","sources":["../../src/commands/split-callout.ts"],"names":[],"mappings":"AAMA,OAAO,KAAK,EAAE,OAAO,EAAc,MAAM,iBAAiB,CAAC;AAE3D,eAAO,MAAM,mBAAmB,EAAE,OAAO,CAAC;IACxC,OAAO,EAAE,MAAM,CAAC;IAChB,WAAW,EAAE,MAAM,CAAC;IACpB,cAAc,EAAE,MAAM,CAAC;CACxB,CAwEA,CAAC"}

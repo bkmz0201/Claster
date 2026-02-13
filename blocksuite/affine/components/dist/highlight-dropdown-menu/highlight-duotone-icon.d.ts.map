@@ -1,0 +1,1 @@
+{"version":3,"file":"highlight-duotone-icon.d.ts","sourceRoot":"","sources":["../../src/highlight-dropdown-menu/highlight-duotone-icon.ts"],"names":[],"mappings":"AACA,OAAO,EAAO,UAAU,EAAE,MAAM,KAAK,CAAC;AAEtC,qBAAa,oBAAqB,SAAQ,UAAU;IAClD,OAAgB,MAAM,0BAQpB;IACO,MAAM;CAGhB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,+BAA+B,EAAE,oBAAoB,CAAC;KACvD;CACF"}

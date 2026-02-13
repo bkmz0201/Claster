@@ -1,0 +1,24 @@
+export declare const root: string;
+export declare const dragPreview: string;
+export declare const dragPreviewIcon: string;
+export declare const listViewRoot: string;
+export declare const dragHandle: string;
+export declare const listDragHandle: string;
+export declare const listSelect: string;
+export declare const listIcon: string;
+export declare const listContent: string;
+export declare const listBrief: string;
+export declare const listSpace: string;
+export declare const listTitle: string;
+export declare const listPreview: string;
+export declare const listQuickActions: string;
+export declare const listHide750: string;
+export declare const listHide560: string;
+export declare const cardViewRoot: string;
+export declare const cardViewHeader: string;
+export declare const cardViewIcon: string;
+export declare const cardViewTitle: string;
+export declare const cardPreviewContainer: string;
+export declare const cardViewCheckbox: string;
+export declare const cardDragHandle: string;
+//# sourceMappingURL=doc-list-item.css.d.ts.map

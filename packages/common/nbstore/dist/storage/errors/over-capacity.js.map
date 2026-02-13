@@ -1,0 +1,1 @@
+{"version":3,"file":"over-capacity.js","sourceRoot":"","sources":["../../../src/storage/errors/over-capacity.ts"],"names":[],"mappings":"AAAA,MAAM,OAAO,iBAAkB,SAAQ,KAAK;IAC1C,YAAmB,WAAiB;QAClC,KAAK,CAAC,wBAAwB,CAAC,CAAC;QADf,gBAAW,GAAX,WAAW,CAAM;IAEpC,CAAC;CACF"}

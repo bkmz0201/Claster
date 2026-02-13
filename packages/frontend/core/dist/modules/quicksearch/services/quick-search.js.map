@@ -1,0 +1,1 @@
+{"version":3,"file":"quick-search.js","sourceRoot":"","sources":["../../../../src/modules/quicksearch/services/quick-search.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,WAAW,EAAE,MAAM,0BAA0B,CAAC;AAEvD,MAAM,OAAO,kBAAmB,SAAQ,OAAO;IAA/C;;QACkB,gBAAW,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CAAC,WAAW,CAAC,CAAC;IACzE,CAAC;CAAA"}

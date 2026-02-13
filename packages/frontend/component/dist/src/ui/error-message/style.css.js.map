@@ -1,0 +1,1 @@
+{"version":3,"file":"style.css.js","sourceRoot":"","sources":["../../../../src/ui/error-message/style.css.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,qBAAqB,CAAC;AAC7C,OAAO,EAAE,KAAK,EAAE,MAAM,sBAAsB,CAAC;AAE7C,MAAM,CAAC,MAAM,YAAY,GAAG,KAAK,CAAC;IAChC,KAAK,EAAE,MAAM,CAAC,sBAAsB,CAAC;IACrC,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,iBAAiB;CAC1B,CAAC,CAAC"}

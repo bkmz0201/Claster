@@ -1,0 +1,1 @@
+{"version":3,"file":"editor-setting.js","sourceRoot":"","sources":["../../../../src/modules/editor-setting/services/editor-setting.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EACL,aAAa,GAEd,MAAM,4BAA4B,CAAC;AAEpC,MAAM,OAAO,oBAAqB,SAAQ,OAAO;IAAjD;;QACE,kBAAa,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CACzC,aAAa,CACM,CAAC;IACxB,CAAC;CAAA"}

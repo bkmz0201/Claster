@@ -1,0 +1,1 @@
+{"version":3,"file":"config.d.ts","sourceRoot":"","sources":["../../../src/services/font-loader/config.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,gBAAgB;;;;;;;;;;;;;;;EAK3B,CAAC;AAEH,MAAM,MAAM,UAAU,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,gBAAgB,CAAC,CAAC;AAE1D,eAAO,MAAM,qBAAqB,EAAE,UAAU,EAsL7C,CAAC;AAEF,eAAO,MAAM,wBAAwB,EAAE,UAAU,EAsLhD,CAAC"}

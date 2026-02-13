@@ -1,0 +1,1 @@
+{"version":3,"file":"element-view.d.ts","sourceRoot":"","sources":["../src/element-view.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,gBAAgB,EAAE,MAAM,0BAA0B,CAAC;AACjE,OAAO,EACL,mBAAmB,EAEpB,MAAM,qBAAqB,CAAC;AAK7B,qBAAa,eAAgB,SAAQ,mBAAmB,CAAC,gBAAgB,CAAC;IACxE,OAAgB,IAAI,EAAE,MAAM,CAAU;IAE7B,SAAS,IAAI,IAAI;IAM1B,OAAO,CAAC,mBAAmB;CAa5B;AAED,eAAO,MAAM,eAAe,2CA6D3B,CAAC"}

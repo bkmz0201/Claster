@@ -1,0 +1,1 @@
+{"version":3,"file":"resize-observer.js","sourceRoot":"","sources":["../../../src/bootstrap/polyfill/resize-observer.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,yBAAyB,CAAC;AAEzD,CAAC,SAAS,sBAAsB;IAC9B,IAAI,OAAO,MAAM,KAAK,WAAW,EAAE,CAAC;QAClC,MAAM,CAAC,cAAc,GAAG,cAAc,CAAC;IACzC,CAAC;AACH,CAAC,CAAC,EAAE,CAAC"}

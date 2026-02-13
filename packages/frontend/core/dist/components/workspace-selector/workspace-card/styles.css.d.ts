@@ -1,0 +1,20 @@
+export declare const container: string;
+export declare const infoContainer: string;
+export declare const activeContainer: string;
+export declare const disable: string;
+export declare const workspaceInfoSlider: string;
+export declare const workspaceInfoSlide: string;
+export declare const avatar: string;
+export declare const workspaceInfo: string;
+export declare const workspaceName: string;
+export declare const workspaceStatus: string;
+export declare const workspaceActiveStatus: string;
+export declare const workspaceInfoTooltip: string;
+export declare const workspaceTitleContainer: string;
+export declare const enableCloudButton: string;
+export declare const collaborationIcon: string;
+export declare const settingButton: string;
+export declare const showOnCardHover: string;
+export declare const activeIcon: string;
+export declare const suffixIcons: string;
+//# sourceMappingURL=styles.css.d.ts.map

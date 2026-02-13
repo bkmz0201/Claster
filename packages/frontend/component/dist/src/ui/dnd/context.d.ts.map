@@ -1,0 +1,1 @@
+{"version":3,"file":"context.d.ts","sourceRoot":"","sources":["../../../../src/ui/dnd/context.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,OAAO,EAAE,gBAAgB,EAAE,cAAc,EAAE,MAAM,SAAS,CAAC;AAEzE,eAAO,MAAM,UAAU;IACrB;;;;;;;OAOG;uBACgB,gBAAgB,CAAC,OAAO,CAAC;IAE5C;;;;;OAKG;qBACc,cAAc,CAAC,OAAO,CAAC;EACpC,CAAC"}

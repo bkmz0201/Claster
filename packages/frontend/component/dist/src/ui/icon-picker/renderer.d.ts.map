@@ -1,0 +1,1 @@
+{"version":3,"file":"renderer.d.ts","sourceRoot":"","sources":["../../../../src/ui/icon-picker/renderer.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAGvC,OAAO,EAAE,KAAK,QAAQ,EAAY,MAAM,QAAQ,CAAC;AAEjD,eAAO,MAAM,YAAY,GAAI,qBAG1B;IACD,IAAI,CAAC,EAAE,QAAQ,CAAC;IAChB,QAAQ,CAAC,EAAE,SAAS,CAAC;CACtB,gUAiBA,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"indexer.js","sourceRoot":"","sources":["../../src/storage/indexer.ts"],"names":[],"mappings":"AAAA,cAAc,oBAAoB,CAAC;AACnC,cAAc,sBAAsB,CAAC;AACrC,cAAc,iBAAiB,CAAC;AAChC,cAAc,kBAAkB,CAAC;AAsHjC,MAAM,OAAgB,kBAAkB;IAAxC;QACW,gBAAW,GAAG,SAAS,CAAC;QACxB,6BAAwB,GAAW,GAAG,CAAC,CAAC,QAAQ;IAyD3D,CAAC;CAAA"}

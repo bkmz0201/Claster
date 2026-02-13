@@ -1,0 +1,1 @@
+{"version":3,"file":"bs-store.js","sourceRoot":"","sources":["../src/bs-store.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,qBAAqB,EAAE,MAAM,+BAA+B,CAAC;AACtE,OAAO,EAAE,0BAA0B,EAAE,MAAM,qCAAqC,CAAC;AAEjF,MAAM,OAAO,GAAG,IAAI,qBAAqB,CAAC,0BAA0B,EAAE,CAAC,CAAC;AAExE,MAAM,UAAU,eAAe;IAC7B,OAAO,OAAO,CAAC;AACjB,CAAC"}

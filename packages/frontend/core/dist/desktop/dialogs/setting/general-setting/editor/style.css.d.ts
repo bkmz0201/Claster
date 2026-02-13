@@ -1,0 +1,25 @@
+export declare const settingWrapper: string;
+export declare const preViewLabelWrapper: string;
+export declare const menu: string;
+export declare const menuTrigger: string;
+export declare const snapshotContainer: string;
+export declare const snapshotTitle: string;
+export declare const snapshotSkeleton: string;
+export declare const snapshot: string;
+export declare const snapshotLabel: string;
+export declare const editorWrapper: string;
+export declare const shapeIndicator: string;
+export declare const InputContainer: string;
+export declare const searchInput: string;
+export declare const searchIcon: string;
+export declare const fontItemContainer: string;
+export declare const fontItem: string;
+export declare const fontLabel: string;
+export declare const selectedIcon: string;
+export declare const notFound: string;
+export declare const spellCheckSettingDescription: string;
+export declare const spellCheckSettingDescriptionButton: string;
+export declare const fontSizeContainer: string;
+export declare const fontSizeSlider: string;
+export declare const fontSizeValue: string;
+//# sourceMappingURL=style.css.d.ts.map

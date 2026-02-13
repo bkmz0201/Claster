@@ -1,0 +1,1 @@
+{"version":3,"file":"rounded-rect.d.ts","sourceRoot":"","sources":["../../src/overlay/rounded-rect.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,kCAAkC,CAAC;AAEpE,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAGhC,qBAAa,gBAAiB,SAAQ,KAAK;IACzC,IAAI,CAAC,GAAG,EAAE,wBAAwB,EAAE,EAAE,EAAE,WAAW,GAAG,IAAI;CAyB3D"}

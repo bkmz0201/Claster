@@ -1,0 +1,1 @@
+{"version":3,"file":"frame-menu.d.ts","sourceRoot":"","sources":["../../src/edgeless-toolbar/frame-menu.ts"],"names":[],"mappings":"AAEA,OAAO,EAAa,UAAU,EAAE,MAAM,KAAK,CAAC;AAI5C,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;;AAG1C,qBAAa,iBAAkB,SAAQ,sBAAoC;IACzE,OAAgB,MAAM,0BAwDpB;IAEO,IAAI,mBAAa;IAE1B,IAAI,YAAY,uDAEf;IAEQ,MAAM;CA6BhB"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/core/statistics/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,qBAAqB,EAAE,MAAM,UAAU,CAAC;AACjD,OAAO,EAAE,0BAA0B,EAAE,MAAM,eAAe,CAAC;AAC3D,OAAO,EAAE,oBAAoB,EAAE,MAAM,aAAa,CAAC;AAGnD,MAAM,CAAC,MAAM,cAAc,GAAuB;IAChD,GAAG,qBAAqB;IACxB,GAAG,oBAAoB;IACvB,GAAG,0BAA0B;CAC9B,CAAC"}

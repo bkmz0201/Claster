@@ -1,0 +1,22 @@
+export declare const container: string;
+export declare const header: string;
+export declare const headerTitle: string;
+export declare const commentList: string;
+export declare const empty: string;
+export declare const commentItem: string;
+export declare const loading: string;
+export declare const repliesContainer: string;
+export declare const pendingComment: string;
+export declare const previewContainer: string;
+export declare const commentActions: string;
+export declare const actionButton: string;
+export declare const readonlyCommentContainer: string;
+export declare const userContainer: string;
+export declare const commentInputContainer: string;
+export declare const userName: string;
+export declare const time: string;
+export declare const collapsedReplies: string;
+export declare const collapsedRepliesTitle: string;
+export declare const replyItem: string;
+export declare const replyActions: string;
+//# sourceMappingURL=style.css.d.ts.map

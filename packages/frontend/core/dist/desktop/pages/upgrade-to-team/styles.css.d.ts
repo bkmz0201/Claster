@@ -1,0 +1,20 @@
+export declare const root: string;
+export declare const menuTrigger: string;
+export declare const upgradeButton: string;
+export declare const contentContainer: string;
+export declare const liStyle: string;
+export declare const doneIcon: string;
+export declare const workspaceItem: string;
+export declare const createWorkspaceItem: string;
+export declare const noWorkspaceItem: string;
+export declare const itemContent: string;
+export declare const itemIcon: string;
+export declare const plainMenuItem: string;
+export declare const createConfirmContent: string;
+export declare const dialogTitle: string;
+export declare const dialogMessage: string;
+export declare const dialogFooter: string;
+export declare const upgradeButtonInDialog: string;
+export declare const userContainer: string;
+export declare const email: string;
+//# sourceMappingURL=styles.css.d.ts.map

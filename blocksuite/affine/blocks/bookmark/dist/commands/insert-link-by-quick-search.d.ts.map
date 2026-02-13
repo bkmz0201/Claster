@@ -1,0 +1,1 @@
+{"version":3,"file":"insert-link-by-quick-search.d.ts","sourceRoot":"","sources":["../../src/commands/insert-link-by-quick-search.ts"],"names":[],"mappings":"AACA,OAAO,EACL,KAAK,gBAAgB,EAItB,MAAM,oCAAoC,CAAC;AAM5C,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAI/C,eAAO,MAAM,8BAA8B,EAAE,OAAO,CAClD,EAAE,EACF;IAAE,gBAAgB,EAAE,OAAO,CAAC,gBAAgB,CAAC,CAAA;CAAE,CA4DhD,CAAC"}

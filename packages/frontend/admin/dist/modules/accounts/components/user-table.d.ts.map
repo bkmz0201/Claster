@@ -1,0 +1,1 @@
+{"version":3,"file":"user-table.d.ts","sourceRoot":"","sources":["../../../../src/modules/accounts/components/user-table.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAgB,KAAK,UAAU,EAAE,MAAM,oBAAoB,CAAC;AAEnE,UAAU,cAAc;IACtB,KAAK,EAAE,UAAU,EAAE,CAAC;CACrB;AAED;;GAEG;AACH,eAAO,MAAM,SAAS,EAAE,KAAK,CAAC,EAAE,CAAC,cAAc,CAuF9C,CAAC"}

@@ -1,0 +1,19 @@
+export declare const tagsInlineEditor: string;
+export declare const tagsEditorRoot: string;
+export declare const tagsEditorRootMobile: string;
+export declare const tagsMenu: string;
+export declare const tagsEditorSelectedTags: string;
+export declare const tagsEditorDoneButton: string;
+export declare const tagDivider: string;
+export declare const searchInput: string;
+export declare const tagsEditorTagsSelector: string;
+export declare const tagsEditorTagsSelectorHeader: string;
+export declare const tagSelectorTagsScrollContainer: string;
+export declare const tagSelectorItem: string;
+export declare const tagEditIcon: string;
+export declare const spacer: string;
+export declare const tagSelectorEmpty: string;
+export declare const menuItemListScrollable: string;
+export declare const menuItemListScrollbar: string;
+export declare const menuItemList: string;
+//# sourceMappingURL=styles.css.d.ts.map

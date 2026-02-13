@@ -1,0 +1,1 @@
+{"version":3,"file":"dnd.js","sourceRoot":"","sources":["../../../src/event/state/dnd.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,YAAY,EAAE,MAAM,YAAY,CAAC;AAM1C,MAAM,OAAO,aAAc,SAAQ,YAAY;IAK7C,YAAY,EAAE,KAAK,EAAwB;QACzC,KAAK,CAAC,KAAK,CAAC,CAAC;QAHN,SAAI,GAAG,UAAU,CAAC;QAKzB,IAAI,CAAC,GAAG,GAAG,KAAK,CAAC;IACnB,CAAC;CACF"}

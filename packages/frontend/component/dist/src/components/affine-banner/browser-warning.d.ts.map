@@ -1,0 +1,1 @@
+{"version":3,"file":"browser-warning.d.ts","sourceRoot":"","sources":["../../../../src/components/affine-banner/browser-warning.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAQvC,eAAO,MAAM,cAAc,GAAI,6BAI5B;IACD,IAAI,EAAE,OAAO,CAAC;IACd,OAAO,EAAE,MAAM,IAAI,CAAC;IACpB,OAAO,EAAE,SAAS,CAAC;CACpB,mDAYA,CAAC;AAEF,eAAe,cAAc,CAAC"}

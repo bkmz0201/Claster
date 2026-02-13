@@ -1,0 +1,1 @@
+{"version":3,"file":"definitions.d.ts","sourceRoot":"","sources":["../../../src/plugins/affine-theme/definitions.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,iBAAiB;IAChC,cAAc,CAAC,OAAO,EAAE;QAAE,QAAQ,EAAE,OAAO,CAAA;KAAE,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC;IAC9D,qBAAqB,IAAI,OAAO,CAAC;QAAE,MAAM,EAAE,MAAM,CAAA;KAAE,CAAC,CAAC;CACtD"}

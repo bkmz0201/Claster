@@ -1,0 +1,1 @@
+{"version":3,"file":"html.js","sourceRoot":"","sources":["../../../../src/blocksuite/ai/utils/html.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,cAAc,CAAC,MAAc;IAC3C,MAAM,KAAK,GAAG,MAAM,CAAC,OAAO,CAAC,iBAAiB,CAAC,CAAC;IAChD,MAAM,GAAG,GAAG,MAAM,CAAC,OAAO,CAAC,SAAS,CAAC,CAAC;IACtC,OAAO,MAAM,CAAC,KAAK,CAAC,KAAK,EAAE,GAAG,GAAG,SAAS,CAAC,MAAM,CAAC,CAAC;AACrD,CAAC"}

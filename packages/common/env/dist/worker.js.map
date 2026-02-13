@@ -1,0 +1,1 @@
+{"version":3,"file":"worker.js","sourceRoot":"","sources":["../src/worker.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,YAAY,CAAC,IAAY;IACvC,OAAO;IACL,kFAAkF;IAClF,CAAC,WAAW,CAAC,OAAO,IAAI,GAAG,CAAC;QAC5B,KAAK;QACL,GAAG,IAAI,IAAI,YAAY,CAAC,UAAU,YAAY,CAC/C,CAAC;AACJ,CAAC"}

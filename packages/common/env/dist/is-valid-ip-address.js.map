@@ -1,0 +1,1 @@
+{"version":3,"file":"is-valid-ip-address.js","sourceRoot":"","sources":["../src/is-valid-ip-address.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,gBAAgB,CAAC,OAAe;IAC9C,IAAI,OAAO,KAAK,WAAW,EAAE,CAAC;QAC5B,OAAO,IAAI,CAAC;IACd,CAAC;IACD,OAAO,kKAAkK,CAAC,IAAI,CAC5K,OAAO,CACR,CAAC;AACJ,CAAC"}

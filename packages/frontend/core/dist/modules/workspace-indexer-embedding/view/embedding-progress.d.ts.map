@@ -1,0 +1,1 @@
+{"version":3,"file":"embedding-progress.d.ts","sourceRoot":"","sources":["../../../../src/modules/workspace-indexer-embedding/view/embedding-progress.tsx"],"names":[],"mappings":"AAMA,UAAU,sBAAsB;IAC9B,MAAM,EAAE;QACN,QAAQ,EAAE,MAAM,CAAC;QACjB,KAAK,EAAE,MAAM,CAAC;KACf,GAAG,IAAI,CAAC;CACV;AAED,QAAA,MAAM,iBAAiB,EAAE,KAAK,CAAC,EAAE,CAAC,sBAAsB,CAgDvD,CAAC;AAEF,eAAe,iBAAiB,CAAC"}

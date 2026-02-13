@@ -1,0 +1,1 @@
+{"version":3,"file":"rect.d.ts","sourceRoot":"","sources":["../../src/overlay/rect.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,kCAAkC,CAAC;AAEpE,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAGhC,qBAAa,SAAU,SAAQ,KAAK;IAClC,IAAI,CAAC,GAAG,EAAE,wBAAwB,EAAE,EAAE,EAAE,WAAW,GAAG,IAAI;CAQ3D"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"panning-utils.d.ts","sourceRoot":"","sources":["../../src/tool/panning-utils.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,IAAI,EAAE,MAAM,wBAAwB,CAAC;AACnD,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,iBAAiB,CAAC;AACzD,OAAO,KAAK,EAAE,QAAQ,EAAE,MAAM,qBAAqB,CAAC;AAIpD,wBAAgB,WAAW,CACzB,QAAQ,EAAE,QAAQ,EAClB,CAAC,EAAE,iBAAiB,EACpB,YAAY,SAAK,GAChB,IAAI,GAAG,IAAI,CAmCb"}

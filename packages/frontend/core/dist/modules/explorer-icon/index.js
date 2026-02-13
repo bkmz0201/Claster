@@ -1,0 +1,11 @@
+import { WorkspaceDBService } from '../db';
+import { WorkspaceScope } from '../workspace';
+import { ExplorerIconService } from './services/explorer-icon';
+import { ExplorerIconStore } from './store/explorer-icon';
+export function configureExplorerIconModule(framework) {
+    framework
+        .scope(WorkspaceScope)
+        .store(ExplorerIconStore, [WorkspaceDBService])
+        .service(ExplorerIconService, [ExplorerIconStore]);
+}
+//# sourceMappingURL=index.js.map

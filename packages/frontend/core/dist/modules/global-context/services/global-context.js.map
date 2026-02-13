@@ -1,0 +1,1 @@
+{"version":3,"file":"global-context.js","sourceRoot":"","sources":["../../../../src/modules/global-context/services/global-context.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,aAAa,EAAE,MAAM,4BAA4B,CAAC;AAE3D,MAAM,OAAO,oBAAqB,SAAQ,OAAO;IAAjD;;QACE,kBAAa,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CAAC,aAAa,CAAC,CAAC;IAC7D,CAAC;CAAA"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"retain-first-model.d.ts","sourceRoot":"","sources":["../../../src/commands/model-crud/retain-first-model.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAC/C,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAEpD,eAAO,MAAM,uBAAuB,EAAE,OAAO,CAAC;IAC5C,cAAc,CAAC,EAAE,UAAU,EAAE,CAAC;CAC/B,CAaA,CAAC"}

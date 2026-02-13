@@ -1,0 +1,20 @@
+export declare const basicCell: string;
+export declare const headerLayoutCell: string;
+export declare const headerLayoutCellOrigin: string;
+export declare const inputStyle: string;
+export declare const popperStyle: string;
+export declare const headerStyle: string;
+export declare const monthHeaderStyle: string;
+export declare const monthTitleStyle: string;
+export declare const yearStyle: string;
+export declare const mouthStyle: string;
+export declare const headerLabel: string;
+export declare const headerActionWrapper: string;
+export declare const headerAction: string;
+export declare const row: string;
+export declare const weekStyle: string;
+export declare const calendarStyle: string;
+export declare const dayStyle: string;
+export declare const arrowDownStyle: string;
+export declare const mouthsStyle: string;
+//# sourceMappingURL=index.css.d.ts.map

@@ -1,0 +1,23 @@
+export { viewer } from '../viewer.css';
+export declare const virtuoso: string;
+export declare const pdfIndicator: string;
+export declare const pdfPage: string;
+export declare const pdfThumbnails: string;
+export declare const pdfThumbnailsList: string;
+export declare const pdfThumbnail: string;
+export declare const pdfContainer: string;
+export declare const pdfViewer: string;
+export declare const pdfPlaceholder: string;
+export declare const pdfControls: string;
+export declare const pdfControlButton: string;
+export declare const pdfFooter: string;
+export declare const pdfFooterItem: string;
+export declare const pdfTitle: string;
+export declare const pdfPageCount: string;
+export declare const pdfLoadingWrapper: string;
+export declare const pdfStatus: string;
+export declare const pdfStatusButton: string;
+export declare const pdfStatusMenu: string;
+export declare const pdfStatusMenuFooter: string;
+export declare const pdfReloadButton: string;
+//# sourceMappingURL=styles.css.d.ts.map

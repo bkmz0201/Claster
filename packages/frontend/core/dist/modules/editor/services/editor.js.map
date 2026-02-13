@@ -1,0 +1,1 @@
+{"version":3,"file":"editor.js","sourceRoot":"","sources":["../../../../src/modules/editor/services/editor.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAI9C,MAAM,OAAO,aAAc,SAAQ,OAAO;IAGxC,YAAqB,KAAkB;QACrC,KAAK,EAAE,CAAC;QADW,UAAK,GAAL,KAAK,CAAa;QAF9B,WAAM,GAAG,IAAI,CAAC,KAAK,CAAC,KAAK,CAAC,MAAM,CAAC;IAI1C,CAAC;CACF"}

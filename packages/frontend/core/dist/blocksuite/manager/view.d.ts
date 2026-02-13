@@ -1,0 +1,57 @@
+import type { ReactToLit } from '@affine/component';
+import { type EdgelessBlockHeaderViewOptions } from '@affine/core/blocksuite/view-extensions/edgeless-block-header';
+import { type AffineEditorViewOptions } from '@affine/core/blocksuite/view-extensions/editor-view/editor-view';
+import { ViewExtensionManager } from '@blocksuite/affine/ext-loader';
+import type { FrameworkProvider } from '@toeverything/infra';
+type Configure = {
+    init: () => Configure;
+    foundation: (framework?: FrameworkProvider) => Configure;
+    editorView: (options?: AffineEditorViewOptions) => Configure;
+    theme: (framework?: FrameworkProvider) => Configure;
+    editorConfig: (framework?: FrameworkProvider) => Configure;
+    edgelessBlockHeader: (options?: EdgelessBlockHeaderViewOptions) => Configure;
+    database: (framework?: FrameworkProvider) => Configure;
+    linkedDoc: (framework?: FrameworkProvider) => Configure;
+    paragraph: (enableAI?: boolean) => Configure;
+    cloud: (framework?: FrameworkProvider, enableCloud?: boolean) => Configure;
+    turboRenderer: (enableTurboRenderer?: boolean) => Configure;
+    pdf: (enablePDFEmbedPreview?: boolean, reactToLit?: ReactToLit) => Configure;
+    mobile: (framework?: FrameworkProvider) => Configure;
+    ai: (enable?: boolean, framework?: FrameworkProvider) => Configure;
+    electron: (framework?: FrameworkProvider) => Configure;
+    linkPreview: (framework?: FrameworkProvider) => Configure;
+    codeBlockPreview: (framework?: FrameworkProvider) => Configure;
+    iconPicker: (framework?: FrameworkProvider) => Configure;
+    comment: (enableComment?: boolean, framework?: FrameworkProvider) => Configure;
+    value: ViewExtensionManager;
+};
+declare class ViewProvider {
+    static instance: ViewProvider | null;
+    static getInstance(): ViewProvider;
+    private readonly _manager;
+    constructor();
+    get value(): ViewExtensionManager;
+    get config(): Configure;
+    private readonly _initDefaultConfig;
+    private readonly _configureFoundation;
+    private readonly _configureEditorView;
+    private readonly _configureTheme;
+    private readonly _configureEditorConfig;
+    private readonly _configureEdgelessBlockHeader;
+    private readonly _configureDatabase;
+    private readonly _configureLinkedDoc;
+    private readonly _configureParagraph;
+    private readonly _configureCloud;
+    private readonly _configureTurboRenderer;
+    private readonly _configurePdf;
+    private readonly _configureMobile;
+    private readonly _configureAI;
+    private readonly _configureElectron;
+    private readonly _configureLinkPreview;
+    private readonly _configureCodeBlockHtmlPreview;
+    private readonly _configureIconPicker;
+    private readonly _configureComment;
+}
+export declare function getViewManager(): ViewProvider;
+export {};
+//# sourceMappingURL=view.d.ts.map

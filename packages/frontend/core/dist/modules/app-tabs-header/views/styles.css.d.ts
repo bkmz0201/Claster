@@ -1,0 +1,20 @@
+export declare const tabOverlayWidth: `var(--${string})` | `var(--${string}, ${string})`;
+export declare const tabButtonWidth: `var(--${string})` | `var(--${string}, ${string})`;
+export declare const tabMaxWidth: `var(--${string})` | `var(--${string}, ${string})`;
+export declare const root: string;
+export declare const headerLeft: string;
+export declare const tabs: string;
+export declare const pinSeparator: string;
+export declare const splitViewSeparator: string;
+export declare const tabWrapper: string;
+export declare const tab: string;
+export declare const splitViewLabel: string;
+export declare const tabCloseButtonWrapper: string;
+export declare const tabIcon: string;
+export declare const labelIcon: string;
+export declare const tabCloseButton: string;
+export declare const splitViewLabelText: string;
+export declare const spacer: string;
+export declare const windowsAppControlsPlaceholder: string;
+export declare const dropIndicator: string;
+//# sourceMappingURL=styles.css.d.ts.map

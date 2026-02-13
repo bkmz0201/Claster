@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/caption/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,oBAAoB,CAAC;AACxD,OAAO,EAAE,kBAAkB,EAA0B,MAAM,oBAAoB,CAAC;AAChF,OAAO,EACL,uBAAuB,EACvB,aAAa,GACd,MAAM,gCAAgC,CAAC;AAExC,MAAM,UAAU,OAAO;IACrB,cAAc,CAAC,MAAM,CAAC,sBAAsB,EAAE,kBAAkB,CAAC,CAAC;AACpE,CAAC"}

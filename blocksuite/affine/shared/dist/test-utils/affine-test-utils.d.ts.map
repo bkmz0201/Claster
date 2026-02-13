@@ -1,0 +1,1 @@
+{"version":3,"file":"affine-test-utils.d.ts","sourceRoot":"","sources":["../../src/test-utils/affine-test-utils.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAc,KAAK,EAAE,MAAM,mBAAmB,CAAC;AAG3D,OAAO,QAAQ,QAAQ,CAAC;IACtB,UAAU,SAAS,CAAC,CAAC,GAAG,GAAG;QACzB,UAAU,CAAC,QAAQ,EAAE,KAAK,EAAE,OAAO,CAAC,EAAE;YAAE,SAAS,CAAC,EAAE,OAAO,CAAA;SAAE,GAAG,CAAC,CAAC;KACnE;CACF"}

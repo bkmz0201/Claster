@@ -1,0 +1,2 @@
+export {};
+//# sourceMappingURL=resize-observer.d.ts.map

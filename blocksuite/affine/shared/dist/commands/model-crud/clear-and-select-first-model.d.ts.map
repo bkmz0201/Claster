@@ -1,0 +1,1 @@
+{"version":3,"file":"clear-and-select-first-model.d.ts","sourceRoot":"","sources":["../../../src/commands/model-crud/clear-and-select-first-model.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,OAAO,EAAiB,MAAM,iBAAiB,CAAC;AAC9D,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAEpD,eAAO,MAAM,+BAA+B,EAAE,OAAO,CAAC;IACpD,cAAc,CAAC,EAAE,UAAU,EAAE,CAAC;CAC/B,CA2BA,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"select-blocks-between.d.ts","sourceRoot":"","sources":["../../src/commands/select-blocks-between.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,KAAK,cAAc,EAEnB,KAAK,OAAO,EACb,MAAM,iBAAiB,CAAC;AAEzB,eAAO,MAAM,mBAAmB,EAAE,OAAO,CAAC;IACxC,UAAU,CAAC,EAAE,cAAc,CAAC;IAC5B,WAAW,CAAC,EAAE,cAAc,CAAC;IAC7B,IAAI,EAAE,OAAO,CAAC;CACf,CA0CA,CAAC"}

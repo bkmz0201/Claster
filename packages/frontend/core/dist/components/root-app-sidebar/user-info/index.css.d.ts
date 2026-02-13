@@ -1,0 +1,20 @@
+export declare const progressColorVar: `var(--${string})` | `var(--${string}, ${string})`;
+export declare const operationMenu: string;
+export declare const account: string;
+export declare const content: string;
+export declare const name: string;
+export declare const email: string;
+export declare const usageBlock: string;
+export declare const aiUsageBlock: string;
+export declare const cloudUsageBlock: string;
+export declare const usageLabel: string;
+export declare const usageLabelTitle: string;
+export declare const cloudUsageBar: string;
+export declare const cloudUsageBarInner: string;
+export declare const freeTag: string;
+export declare const teamWorkspace: string;
+export declare const teamAvatarStack: string;
+export declare const workspaceAvatar: string;
+export declare const teamName: string;
+export declare const teamBadge: string;
+//# sourceMappingURL=index.css.d.ts.map

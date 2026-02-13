@@ -1,0 +1,1 @@
+{"version":3,"file":"edgeless-clipboard-config.d.ts","sourceRoot":"","sources":["../../src/embed-youtube-block/edgeless-clipboard-config.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,kCAAkC,CAAC;AAC3E,OAAO,EAAE,KAAK,aAAa,EAAE,MAAM,mBAAmB,CAAC;AAEvD,qBAAa,mCAAoC,SAAQ,uBAAuB;IAC9E,gBAAyB,GAAG,0BAA0B;IAE7C,WAAW,CAAC,YAAY,EAAE,aAAa,GAAG,MAAM,GAAG,IAAI;CAmCjE"}

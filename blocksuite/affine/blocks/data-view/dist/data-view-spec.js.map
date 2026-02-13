@@ -1,0 +1,1 @@
+{"version":3,"file":"data-view-spec.js","sourceRoot":"","sources":["../src/data-view-spec.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,gBAAgB,EAAE,MAAM,iBAAiB,CAAC;AAEvE,OAAO,EAAE,OAAO,EAAE,MAAM,oBAAoB,CAAC;AAE7C,MAAM,CAAC,MAAM,iBAAiB,GAAoB;IAChD,gBAAgB,CAAC,kBAAkB,CAAC;IACpC,kBAAkB,CAAC,kBAAkB,EAAE,OAAO,CAAA,kBAAkB,CAAC;CAClE,CAAC"}

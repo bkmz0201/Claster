@@ -1,0 +1,20 @@
+export declare const containerStyle: string;
+export declare const headerStyle: string;
+export declare const iconStyle: string;
+export declare const memberListStyle: string;
+export declare const footerStyle: string;
+export declare const manageMemberStyle: string;
+export declare const searchInput: string;
+export declare const InputContainer: string;
+export declare const inlineMembersContainer: string;
+export declare const roleSelectorContainer: string;
+export declare const menuTriggerStyle: string;
+export declare const buttonsContainer: string;
+export declare const button: string;
+export declare const sentEmail: string;
+export declare const checkbox: string;
+export declare const resultContainer: string;
+export declare const noFound: string;
+export declare const scrollbar: string;
+export declare const planTagContainer: string;
+//# sourceMappingURL=invite-member-editor.css.d.ts.map

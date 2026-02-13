@@ -1,0 +1,1 @@
+{"version":3,"file":"insert-bookmark.d.ts","sourceRoot":"","sources":["../../src/commands/insert-bookmark.ts"],"names":[],"mappings":"AAGA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAE/C,eAAO,MAAM,qBAAqB,EAAE,OAAO,CACzC;IAAE,GAAG,EAAE,MAAM,CAAA;CAAE,EACf;IAAE,OAAO,EAAE,MAAM,CAAC;IAAC,OAAO,EAAE,MAAM,CAAA;CAAE,CAerC,CAAC"}

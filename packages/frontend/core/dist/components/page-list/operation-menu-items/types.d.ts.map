@@ -1,0 +1,1 @@
+{"version":3,"file":"types.d.ts","sourceRoot":"","sources":["../../../../src/components/page-list/operation-menu-items/types.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,OAAO,CAAC;AAE5C,MAAM,MAAM,mBAAmB,CAAC,YAAY,GAAG,SAAS,IAAI;IAE1D,WAAW,CAAC,EAAE,MAAM,IAAI,CAAC;IAEzB,QAAQ,CAAC,EAAE,CAAC,MAAM,CAAC,EAAE,YAAY,KAAK,IAAI,CAAC;CAC5C,GAAG,cAAc,CAAC,iBAAiB,CAAC,CAAC"}

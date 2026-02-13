@@ -1,0 +1,1 @@
+{"version":3,"file":"date-group.d.ts","sourceRoot":"","sources":["../../../../src/core/group-by/renderer/date-group.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,iBAAiB,EAAE,MAAM,iBAAiB,CAAC;AAIpD,OAAO,KAAK,EAAE,KAAK,EAAE,MAAM,aAAa,CAAC;;AAEzC,qBAAa,aAAc,SAAQ,kBAElC;IACC,OAAgB,MAAM,0BAyBpB;IAGF,QAAQ,CAAC,KAAK,EAAG,KAAK,CAAC;cAEJ,MAAM;CAY1B"}

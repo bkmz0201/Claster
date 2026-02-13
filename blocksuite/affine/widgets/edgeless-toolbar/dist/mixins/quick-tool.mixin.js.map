@@ -1,0 +1,1 @@
+{"version":3,"file":"quick-tool.mixin.js","sourceRoot":"","sources":["../../src/mixins/quick-tool.mixin.ts"],"names":[],"mappings":"AAGA,OAAO,EAGL,wBAAwB,GACzB,MAAM,iBAAiB,CAAC;AAIzB;;GAEG;AACH,MAAM,CAAC,MAAM,cAAc,GAAG,CAC5B,UAAa,EACb,EAAE;IACF,MAAe,YAAa,SAAQ,wBAAwB,CAAC,UAAU,CAAC;KAAG;IAE3E,OAAO,YAA+D,CAAC;AACzE,CAAC,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"keyboard-event-watcher.d.ts","sourceRoot":"","sources":["../../src/watchers/keyboard-event-watcher.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,sBAAsB,EAAE,MAAM,mBAAmB,CAAC;AAEhE,qBAAa,oBAAoB;IAYnB,QAAQ,CAAC,MAAM,EAAE,sBAAsB;IAXnD,OAAO,CAAC,QAAQ,CAAC,gBAAgB,CAS/B;gBAEmB,MAAM,EAAE,sBAAsB;IAEnD,KAAK;CAKN"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"view-transition.d.ts","sourceRoot":"","sources":["../../../src/utils/view-transition.ts"],"names":[],"mappings":"AAKA;;GAEG;AACH,wBAAgB,yBAAyB,CACvC,KAAK,EAAE,MAAM,GAAG,MAAM,EAAE,EACxB,EAAE,EAAE,MAAM,OAAO,CAAC,IAAI,CAAC,GAAG,IAAI,EAC9B,OAAO,CAAC,EAAE;IAAE,OAAO,CAAC,EAAE,MAAM,CAAA;CAAE,QAqB/B;AAED,wBAAgB,eAAe,CAAC,KAAK,EAAE,MAAM,UAE5C"}

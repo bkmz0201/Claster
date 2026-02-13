@@ -1,0 +1,1 @@
+{"version":3,"file":"audio-waveform.d.ts","sourceRoot":"","sources":["../../../../src/ui/audio-player/audio-waveform.tsx"],"names":[],"mappings":"AA+GA,eAAO,MAAM,aAAa,GAAI,sDAM3B;IACD,QAAQ,EAAE,MAAM,EAAE,CAAC;IACnB,QAAQ,EAAE,MAAM,CAAC;IACjB,YAAY,EAAE,CAAC,QAAQ,EAAE,MAAM,KAAK,IAAI,CAAC;IACzC,IAAI,CAAC,EAAE,OAAO,CAAC;IACf,OAAO,CAAC,EAAE,OAAO,CAAC;CACnB,4CAmGA,CAAC"}

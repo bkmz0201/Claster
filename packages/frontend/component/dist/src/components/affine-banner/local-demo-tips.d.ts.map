@@ -1,0 +1,1 @@
+{"version":3,"file":"local-demo-tips.d.ts","sourceRoot":"","sources":["../../../../src/components/affine-banner/local-demo-tips.tsx"],"names":[],"mappings":"AAQA,KAAK,kBAAkB,GAAG;IACxB,UAAU,EAAE,OAAO,CAAC;IACpB,OAAO,EAAE,MAAM,IAAI,CAAC;IACpB,aAAa,EAAE,MAAM,IAAI,CAAC;IAC1B,OAAO,EAAE,MAAM,IAAI,CAAC;CACrB,CAAC;AAEF,eAAO,MAAM,aAAa,GAAI,kDAK3B,kBAAkB,4CAiCpB,CAAC;AAEF,eAAe,aAAa,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"root.css.js","sourceRoot":"","sources":["../../../../../src/mobile/components/navigation/tree/root.css.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,sBAAsB,CAAC;AAE7C,MAAM,CAAC,MAAM,WAAW,GAAG,KAAK,CAAC;IAC/B,OAAO,EAAE,MAAM;IACf,SAAS,EAAE;QACT,cAAc,EAAE;YACd,OAAO,EAAE,SAAS;SACnB;KACF;CACF,CAAC,CAAC"}

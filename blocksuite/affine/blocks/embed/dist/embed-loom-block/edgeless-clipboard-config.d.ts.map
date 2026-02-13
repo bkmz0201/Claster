@@ -1,0 +1,1 @@
+{"version":3,"file":"edgeless-clipboard-config.d.ts","sourceRoot":"","sources":["../../src/embed-loom-block/edgeless-clipboard-config.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,kCAAkC,CAAC;AAC3E,OAAO,EAAE,KAAK,aAAa,EAAE,MAAM,mBAAmB,CAAC;AAEvD,qBAAa,gCAAiC,SAAQ,uBAAuB;IAC3E,gBAAyB,GAAG,uBAAuB;IAE1C,WAAW,CAAC,SAAS,EAAE,aAAa,GAAG,MAAM,GAAG,IAAI;CAqB9D"}

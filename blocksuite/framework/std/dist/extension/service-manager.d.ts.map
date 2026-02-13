@@ -1,0 +1,1 @@
+{"version":3,"file":"service-manager.d.ts","sourceRoot":"","sources":["../../src/extension/service-manager.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,uBAAuB,CAAC;AAGzD,qBAAa,cAAe,SAAQ,gBAAgB;IAClD,gBAAyB,GAAG,oBAAoB;IAEvC,OAAO;IAQP,SAAS;CAOnB"}

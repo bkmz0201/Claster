@@ -1,0 +1,20 @@
+import { GlobalContextService } from '@affine/core/modules/global-context';
+import { useLiveData, useServices } from '@toeverything/infra';
+import { useEffect } from 'react';
+import { useLocation, useParams } from 'react-router-dom';
+export const DumpInfo = (_props) => {
+    const { globalContextService } = useServices({ GlobalContextService });
+    const location = useLocation();
+    const currentWorkspaceId = useLiveData(globalContextService.globalContext.workspaceId.$);
+    const path = location.pathname;
+    const query = useParams();
+    useEffect(() => {
+        console.info('DumpInfo', {
+            path,
+            query,
+            currentWorkspaceId: currentWorkspaceId,
+        });
+    }, [path, query, currentWorkspaceId]);
+    return null;
+};
+//# sourceMappingURL=info-logger.js.map

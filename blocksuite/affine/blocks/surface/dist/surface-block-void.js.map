@@ -1,0 +1,1 @@
+{"version":3,"file":"surface-block-void.js","sourceRoot":"","sources":["../src/surface-block-void.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,cAAc,EAAE,MAAM,iBAAiB,CAAC;AACjD,OAAO,EAAE,OAAO,EAAE,MAAM,KAAK,CAAC;AAI9B,MAAM,OAAO,yBAA0B,SAAQ,cAAiC;IACrE,MAAM;QACb,OAAO,OAAO,CAAC;IACjB,CAAC;CACF"}

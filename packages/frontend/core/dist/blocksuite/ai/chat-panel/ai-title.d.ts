@@ -1,0 +1,46 @@
+import type { AIToolsConfigService } from '@affine/core/modules/ai-button';
+import type { ServerService } from '@affine/core/modules/cloud';
+import type { WorkspaceDialogService } from '@affine/core/modules/dialogs';
+import type { FeatureFlagService } from '@affine/core/modules/feature-flag';
+import type { AppThemeService } from '@affine/core/modules/theme';
+import type { CopilotChatHistoryFragment } from '@affine/graphql';
+import { type NotificationService } from '@blocksuite/affine/shared/services';
+import type { EditorHost } from '@blocksuite/affine/std';
+import { ShadowlessElement } from '@blocksuite/affine/std';
+import type { ExtensionType, Store } from '@blocksuite/affine/store';
+import type { SearchMenuConfig } from '../components/ai-chat-add-context';
+import type { DocDisplayConfig } from '../components/ai-chat-chips';
+import type { AINetworkSearchConfig, AIPlaygroundConfig, AIReasoningConfig } from '../components/ai-chat-input';
+import type { ChatStatus } from '../components/ai-chat-messages';
+import type { AppSidebarConfig } from './chat-config';
+declare const AIChatPanelTitle_base: typeof ShadowlessElement & import("@blocksuite/global/utils").Constructor<import("@blocksuite/global/lit").DisposableClass>;
+export declare class AIChatPanelTitle extends AIChatPanelTitle_base {
+    static styles: import("lit").CSSResult;
+    accessor host: EditorHost;
+    accessor doc: Store;
+    accessor playgroundConfig: AIPlaygroundConfig;
+    accessor appSidebarConfig: AppSidebarConfig;
+    accessor networkSearchConfig: AINetworkSearchConfig;
+    accessor reasoningConfig: AIReasoningConfig;
+    accessor searchMenuConfig: SearchMenuConfig;
+    accessor docDisplayConfig: DocDisplayConfig;
+    accessor extensions: ExtensionType[];
+    accessor serverService: ServerService;
+    accessor affineFeatureFlagService: FeatureFlagService;
+    accessor affineWorkspaceDialogService: WorkspaceDialogService;
+    accessor affineThemeService: AppThemeService;
+    accessor notificationService: NotificationService;
+    accessor aiToolsConfigService: AIToolsConfigService;
+    accessor session: CopilotChatHistoryFragment | null | undefined;
+    accessor status: ChatStatus;
+    accessor embeddingProgress: [number, number];
+    accessor newSession: () => void;
+    accessor togglePin: () => void;
+    accessor openSession: (sessionId: string) => void;
+    accessor openDoc: (docId: string, sessionId: string) => void;
+    accessor deleteSession: (session: BlockSuitePresets.AIRecentSession) => void;
+    private readonly openPlayground;
+    render(): import("lit-html").TemplateResult<1>;
+}
+export {};
+//# sourceMappingURL=ai-title.d.ts.map

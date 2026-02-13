@@ -1,0 +1,1 @@
+{"version":3,"file":"focus-block-end.d.ts","sourceRoot":"","sources":["../../../src/commands/selection/focus-block-end.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,KAAK,cAAc,EACnB,KAAK,OAAO,EAEb,MAAM,iBAAiB,CAAC;AAEzB;;;;;GAKG;AACH,eAAO,MAAM,aAAa,EAAE,OAAO,CAAC;IAClC,UAAU,CAAC,EAAE,cAAc,CAAC;IAC5B,KAAK,CAAC,EAAE,OAAO,CAAC;CACjB,CAqBA,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"use-debounce-callback.d.ts","sourceRoot":"","sources":["../../../src/hooks/use-debounce-callback.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,WAAW,CAAC;AAGrC,eAAO,MAAM,mBAAmB,GAAI,CAAC,SAAS,CAAC,GAAG,IAAI,EAAE,GAAG,EAAE,KAAK,GAAG,EACnE,UAAU,CAAC,EACX,QAAQ,MAAM,EACd,UAAU,UAAU,CAAC,OAAO,QAAQ,CAAC,CAAC,CAAC,CAAC,sCAoBzC,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"system-font-family.d.ts","sourceRoot":"","sources":["../../../../src/modules/system-font-family/services/system-font-family.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,gBAAgB,EAAE,MAAM,gCAAgC,CAAC;AAElE,qBAAa,uBAAwB,SAAQ,OAAO;IAClD,SAAgB,gBAAgB,mBACgB;CACjD"}

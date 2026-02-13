@@ -1,0 +1,1 @@
+{"version":3,"file":"note.d.ts","sourceRoot":"","sources":["../../../src/services/telemetry-service/note.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,YAAY,CAAC;AAEjD,MAAM,MAAM,aAAa,GAAG,wBAAwB,CAAC;AAErD,MAAM,MAAM,UAAU,GAAG;IACvB,sBAAsB,EAAE,cAAc,GAAG;QACvC,OAAO,EAAE,cAAc,CAAC;QACxB,IAAI,EAAE,MAAM,CAAC;KACd,CAAC;IACF,mBAAmB,EAAE,cAAc,CAAC;CACrC,CAAC"}

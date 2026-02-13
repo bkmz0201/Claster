@@ -1,0 +1,1 @@
+{"version":3,"file":"simple-color-picker.d.ts","sourceRoot":"","sources":["../../../../../src/desktop/pages/theme-editor/components/simple-color-picker.tsx"],"names":[],"mappings":"AACA,OAAO,EAAE,KAAK,cAAc,EAAS,MAAM,OAAO,CAAC;AAInD,eAAO,MAAM,iBAAiB,GAAI,0CAK/B,cAAc,CAAC,cAAc,CAAC,GAAG;IAClC,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,EAAE,CAAC,KAAK,EAAE,MAAM,KAAK,IAAI,CAAC;CACnC,4CAoBA,CAAC"}

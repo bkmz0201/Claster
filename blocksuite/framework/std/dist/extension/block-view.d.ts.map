@@ -1,0 +1,1 @@
+{"version":3,"file":"block-view.d.ts","sourceRoot":"","sources":["../../src/extension/block-view.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,mBAAmB,CAAC;AAGvD,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,iBAAiB,CAAC;AAErD;;;;;;;;;;;;;;;;;GAiBG;AACH,wBAAgB,kBAAkB,CAChC,OAAO,EAAE,MAAM,EACf,IAAI,EAAE,aAAa,GAClB,aAAa,CAMf"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"block-icons.d.ts","sourceRoot":"","sources":["../src/block-icons.ts"],"names":[],"mappings":"AAcA,OAAO,KAAK,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AACpD,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,KAAK,CAAC;AAc1C,eAAO,MAAM,OAAO,GAClB,OAAO,UAAU,GAAG;IAClB,KAAK,EAAE;QACL,IAAI,CAAC,EAAE,MAAM,CAAC;KACf,CAAC;CACH,KACA,cASF,CAAC"}

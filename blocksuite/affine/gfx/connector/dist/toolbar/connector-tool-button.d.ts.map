@@ -1,0 +1,1 @@
+{"version":3,"file":"connector-tool-button.d.ts","sourceRoot":"","sources":["../../src/toolbar/connector-tool-button.ts"],"names":[],"mappings":"AAUA,OAAO,EAAa,UAAU,EAAE,MAAM,KAAK,CAAC;AAE5C,OAAO,EAAE,aAAa,EAAE,MAAM,mBAAmB,CAAC;;AAQlD,qBAAa,2BAA4B,SAAQ,gCAEhD;IACC,OAAgB,MAAM,0BAIpB;IAEF,OAAO,CAAC,QAAQ,CAAC,MAAM,CAGpB;IAEM,IAAI,uBAAiB;IAE9B,OAAO,CAAC,WAAW;IAaV,MAAM;CA6BhB"}

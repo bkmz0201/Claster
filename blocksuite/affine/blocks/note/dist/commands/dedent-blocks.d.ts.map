@@ -1,0 +1,1 @@
+{"version":3,"file":"dedent-blocks.d.ts","sourceRoot":"","sources":["../../src/commands/dedent-blocks.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,KAAK,OAAO,EAAiB,MAAM,iBAAiB,CAAC;AAI9D,eAAO,MAAM,YAAY,EAAE,OAAO,CAAC;IACjC,QAAQ,CAAC,EAAE,MAAM,EAAE,CAAC;IACpB,WAAW,CAAC,EAAE,OAAO,CAAC;CACvB,CA0EA,CAAC"}

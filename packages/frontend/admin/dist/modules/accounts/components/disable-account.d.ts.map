@@ -1,0 +1,1 @@
+{"version":3,"file":"disable-account.d.ts","sourceRoot":"","sources":["../../../../src/modules/accounts/components/disable-account.tsx"],"names":[],"mappings":"AAYA,eAAO,MAAM,oBAAoB,GAAI,oDAMlC;IACD,KAAK,EAAE,MAAM,CAAC;IACd,IAAI,EAAE,OAAO,CAAC;IACd,OAAO,EAAE,MAAM,IAAI,CAAC;IACpB,SAAS,EAAE,MAAM,IAAI,CAAC;IACtB,YAAY,EAAE,CAAC,IAAI,EAAE,OAAO,KAAK,IAAI,CAAC;CACvC,4CAoDA,CAAC"}

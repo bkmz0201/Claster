@@ -1,0 +1,1 @@
+{"version":3,"file":"mobile.d.ts","sourceRoot":"","sources":["../src/mobile.ts"],"names":[],"mappings":"AAIA,KAAK,oBAAoB,GAAG;IAC1B,IAAI,EAAE;QAAE,EAAE,EAAE,MAAM,CAAC;QAAC,OAAO,EAAE,MAAM,CAAA;KAAE,CAAC;CACvC,CAAC;AAEF,eAAO,MAAM,IAAI;;;;;;;;;;eACJ;QACT,OAAO,EAAE,MAAM,OAAO,CAAC,oBAAoB,CAAC,CAAC;KAC9C;sGAgBD,CAAC"}

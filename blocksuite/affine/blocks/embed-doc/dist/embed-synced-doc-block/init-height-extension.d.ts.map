@@ -1,0 +1,1 @@
+{"version":3,"file":"init-height-extension.d.ts","sourceRoot":"","sources":["../../src/embed-synced-doc-block/init-height-extension.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,gBAAgB,EAAE,MAAM,iBAAiB,CAAC;AAKnD,qBAAa,6BAA8B,SAAQ,gBAAgB;IACjE,OAAgB,GAAG,SAAkD;IAE5D,OAAO;IA+CP,SAAS,IAAI,IAAI;IAI1B,OAAO,CAAC,QAAQ,CAAC,UAAU,CAAqB;IAEhD,OAAO,CAAC,QAAQ,CAAC,YAAY,CAAyB;CACvD"}

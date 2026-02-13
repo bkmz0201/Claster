@@ -1,0 +1,1 @@
+{"version":3,"file":"link.d.ts","sourceRoot":"","sources":["../../src/link-preview/link.ts"],"names":[],"mappings":"AAEA,OAAO,EAAO,UAAU,EAAE,MAAM,KAAK,CAAC;AAItC,qBAGa,WAAY,SAAQ,UAAU;IACzC,OAAgB,MAAM,0BA6BpB;IAGF,QAAQ,CAAC,GAAG,EAAG,MAAM,CAAC;IAEb,MAAM;CAchB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,qBAAqB,EAAE,WAAW,CAAC;KACpC;CACF"}

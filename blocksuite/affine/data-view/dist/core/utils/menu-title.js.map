@@ -1,0 +1,1 @@
+{"version":3,"file":"menu-title.js","sourceRoot":"","sources":["../../../src/core/utils/menu-title.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,gBAAgB,EAAE,MAAM,uBAAuB,CAAC;AACzD,OAAO,EAAE,IAAI,EAAE,MAAM,KAAK,CAAC;AAE3B,MAAM,CAAC,MAAM,SAAS,GAAG,CAAC,IAAY,EAAE,MAAkB,EAAE,EAAE;IAC5D,OAAO,IAAI,CAAA;;;;;iBAKI,MAAM;;;;UAIb,gBAAgB,EAAE;;;;;UAKlB,IAAI;;;GAGX,CAAC;AACJ,CAAC,CAAC"}

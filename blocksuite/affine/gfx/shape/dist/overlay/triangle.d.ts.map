@@ -1,0 +1,1 @@
+{"version":3,"file":"triangle.d.ts","sourceRoot":"","sources":["../../src/overlay/triangle.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,kCAAkC,CAAC;AAEpE,OAAO,EAAE,KAAK,EAAE,MAAM,SAAS,CAAC;AAGhC,qBAAa,aAAc,SAAQ,KAAK;IACtC,IAAI,CAAC,GAAG,EAAE,wBAAwB,EAAE,EAAE,EAAE,WAAW,GAAG,IAAI;CAe3D"}

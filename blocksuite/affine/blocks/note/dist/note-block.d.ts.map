@@ -1,0 +1,1 @@
+{"version":3,"file":"note-block.d.ts","sourceRoot":"","sources":["../src/note-block.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,0BAA0B,CAAC;AAC/D,OAAO,EAAE,cAAc,EAAE,MAAM,iBAAiB,CAAC;AAGjD,qBAAa,kBAAmB,SAAQ,cAAc,CAAC,cAAc,CAAC;IACpE,OAAgB,MAAM,0BAOpB;IAEO,iBAAiB;IAIjB,WAAW;CASrB;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,aAAa,EAAE,kBAAkB,CAAC;KACnC;CACF"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"file-path.js","sourceRoot":"","sources":["../../../src/adapters/middlewares/file-path.ts"],"names":[],"mappings":"AAEA,MAAM,CAAC,MAAM,kBAAkB,GAAG,cAAc,CAAC;AAEjD;;;;GAIG;AACH,MAAM,CAAC,MAAM,kBAAkB,GAAG,CAAC,QAAgB,EAAyB,EAAE;IAC5E,OAAO,CAAC,EAAE,cAAc,EAAE,EAAE,EAAE;QAC5B,cAAc,CAAC,GAAG,CAAC,kBAAkB,EAAE,QAAQ,CAAC,CAAC;IACnD,CAAC,CAAC;AACJ,CAAC,CAAC"}

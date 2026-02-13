@@ -1,0 +1,3 @@
+import { type Framework } from '@toeverything/infra';
+export declare function configureCommonModules(framework: Framework): void;
+//# sourceMappingURL=index.d.ts.map

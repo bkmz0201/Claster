@@ -1,0 +1,21 @@
+{
+  "publicPath": "https://dev.affineassets.com/",
+  "js": [
+    "js/runtime.84618944.js",
+    "js/i18n.28bd9877.js",
+    "js/i18n-langs.i18n-completenesses.ee6f29a4.js",
+    "js/npm-rxjs.955dea76.js",
+    "js/npm-emotion.cfe2717e.js",
+    "js/npm-react.1d34bc6d.js",
+    "js/npm-jotai.d498b9f4.js",
+    "js/npm-blocksuite.31de61cb.js",
+    "js/vendor.ff3c53a7.js",
+    "js/index.f2b09dfe.js"
+  ],
+  "css": [
+    "styles.155cb147.css",
+    "vendor.8420298c.css"
+  ],
+  "gitHash": "66407f2b2",
+  "description": "There can be more than Notion and Miro. AFFiNE is a next-gen knowledge base that brings planning, sorting and creating all together."
+}

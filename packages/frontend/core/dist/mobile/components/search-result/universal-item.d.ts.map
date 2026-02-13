@@ -1,0 +1,1 @@
+{"version":3,"file":"universal-item.d.ts","sourceRoot":"","sources":["../../../../src/mobile/components/search-result/universal-item.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,eAAe,EAAE,MAAM,kCAAkC,CAAC;AAOxE,MAAM,WAAW,8BAA8B;IAC7C,EAAE,EAAE,MAAM,CAAC;IACX,IAAI,EAAE,eAAe,CAAC;IACtB,QAAQ,EAAE,KAAK,GAAG,YAAY,CAAC;CAChC;AACD,eAAO,MAAM,yBAAyB,GAAI,yBAIvC,8BAA8B,4CAehC,CAAC"}

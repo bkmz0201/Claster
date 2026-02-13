@@ -1,0 +1,1 @@
+{"version":3,"file":"utils.d.ts","sourceRoot":"","sources":["../../../../src/blocksuite/ai/peek-view/utils.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,KAAK,EAAE,MAAM,+BAA+B,CAAC;AACtD,OAAO,KAAK,EAAE,aAAa,EAAE,MAAM,wBAAwB,CAAC;AAE5D,OAAO,EACL,KAAK,gBAAgB,EAGtB,MAAM,WAAW,CAAC;AAEnB;;;;;;;;;GASG;AACH,wBAAgB,cAAc,CAC5B,WAAW,EAAE,gBAAgB,EAC7B,GAAG,EAAE,aAAa,SAgEnB"}

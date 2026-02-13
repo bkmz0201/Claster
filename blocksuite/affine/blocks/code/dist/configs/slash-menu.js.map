@@ -1,0 +1,1 @@
+{"version":3,"file":"slash-menu.js","sourceRoot":"","sources":["../../src/configs/slash-menu.ts"],"names":[],"mappings":"AAAA,OAAO,EAAwB,MAAM,sCAAsC,CAAC;AAE5E,MAAM,CAAC,MAAM,mBAAmB,GAAoB;IAClD,WAAW,EAAE,CAAC,EAAE,KAAK,EAAE,EAAE,EAAE;QACzB,OAAO,KAAK,CAAC,OAAO,KAAK,aAAa,CAAC;IACzC,CAAC;IACD,KAAK,EAAE,EAAE;CACV,CAAC"}

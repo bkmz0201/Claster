@@ -1,0 +1,1 @@
+{"version":3,"file":"server.js","sourceRoot":"","sources":["../../../../src/modules/cloud/services/server.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAI9C,MAAM,OAAO,aAAc,SAAQ,OAAO;IAExC,YAA6B,WAAwB;QACnD,KAAK,EAAE,CAAC;QADmB,gBAAW,GAAX,WAAW,CAAa;QAD5C,WAAM,GAAG,IAAI,CAAC,WAAW,CAAC,MAAM,CAAC;IAG1C,CAAC;CACF"}

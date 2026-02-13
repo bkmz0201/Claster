@@ -1,0 +1,1 @@
+{"version":3,"file":"layout.d.ts","sourceRoot":"","sources":["../../src/modules/layout.tsx"],"names":[],"mappings":"AASA,OAAO,KAAK,EAAE,iBAAiB,EAAwB,MAAM,OAAO,CAAC;AAiBrE,OAAO,EAEL,KAAK,mBAAmB,EAEzB,MAAM,iBAAiB,CAAC;AAEzB,wBAAgB,MAAM,CAAC,EAAE,QAAQ,EAAE,EAAE,iBAAiB,2CAmIrD;AAED,eAAO,MAAM,SAAS,GAAI,qCAIvB,mBAAmB,4CAkFrB,CAAC;AACF,eAAO,MAAM,UAAU,GAAI,qCAIxB,mBAAmB,4CA8CrB,CAAC"}

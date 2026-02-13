@@ -1,0 +1,20 @@
+import type { Locator, Page } from '@playwright/test';
+export declare const getPropertyValueLocator: (page: Page, property: string) => Locator;
+export declare const ensurePagePropertiesVisible: (page: Page) => Promise<void>;
+export declare const clickPropertyValue: (page: Page, property: string) => Promise<void>;
+export declare const openTagsEditor: (page: Page) => Promise<void>;
+export declare const closeTagsEditor: (page: Page) => Promise<void>;
+export declare const clickTagFromSelector: (page: Page, name: string) => Promise<void>;
+export declare const removeSelectedTag: (page: Page, name: string) => Promise<void>;
+export declare const filterTags: (page: Page, filter: string) => Promise<void>;
+export declare const searchAndCreateTag: (page: Page, name: string) => Promise<void>;
+export declare const expectTagsVisible: (root: Locator | Page, tags: string[]) => Promise<void>;
+export declare const clickAddPropertyButton: (root: Locator | Page) => Promise<void>;
+export declare const ensureAddPropertyButtonVisible: (page: Page, root: Locator | Page) => Promise<void>;
+export declare const togglePropertyListVisibility: (page: Page) => Promise<void>;
+export declare const addCustomProperty: (page: Page, root: Locator | Page, type: string) => Promise<void>;
+export declare const expectPropertyOrdering: (page: Page, properties: string[]) => Promise<void>;
+export declare const openWorkspaceProperties: (page: Page) => Promise<void>;
+export declare const selectVisibilitySelector: (page: Page, name: string, option: string) => Promise<void>;
+export declare const changePropertyVisibility: (page: Page, name: string, option: string) => Promise<void>;
+//# sourceMappingURL=properties.d.ts.map

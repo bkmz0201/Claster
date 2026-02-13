@@ -1,0 +1,2 @@
+export declare const getOpenUrlInDesktopAppLink: (url: string, newTab?: boolean, scheme?: "affine" | "affine-canary" | "affine-beta" | "affine-internal" | "affine-dev") => string | null;
+//# sourceMappingURL=utils.d.ts.map

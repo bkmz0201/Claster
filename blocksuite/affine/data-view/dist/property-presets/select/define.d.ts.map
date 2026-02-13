@@ -1,0 +1,1 @@
+{"version":3,"file":"define.d.ts","sourceRoot":"","sources":["../../../src/property-presets/select/define.ts"],"names":[],"mappings":"AACA,OAAO,GAAG,MAAM,KAAK,CAAC;AAKtB,eAAO,MAAM,kBAAkB;;;CAAyB,CAAC;AACzD,eAAO,MAAM,oBAAoB;;;;;;;;;;;;;;;;;;;;;;;;;;EAE/B,CAAC;AACH,MAAM,MAAM,kBAAkB,GAAG,GAAG,CAAC,KAAK,CAAC,OAAO,oBAAoB,CAAC,CAAC;AACxE,eAAO,MAAM,yBAAyB;;;;;;gCA6DpC,CAAC"}

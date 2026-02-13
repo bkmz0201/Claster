@@ -1,0 +1,1 @@
+{"version":3,"file":"app-item.d.ts","sourceRoot":"","sources":["../../web/components/app-item.tsx"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,QAAQ,EAAE,eAAe,EAAE,MAAM,UAAU,CAAC;AAG1D,UAAU,YAAY;IACpB,GAAG,EAAE,QAAQ,CAAC;IACd,UAAU,CAAC,EAAE,eAAe,EAAE,CAAC;CAChC;AAED,wBAAgB,OAAO,CAAC,EAAE,GAAG,EAAE,UAAU,EAAE,EAAE,YAAY,2CA+GxD"}

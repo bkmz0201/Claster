@@ -1,0 +1,1 @@
+{"version":3,"file":"format-native.d.ts","sourceRoot":"","sources":["../../src/command/format-native.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,oBAAoB,EAAE,MAAM,iCAAiC,CAAC;AAC5E,OAAO,EAGL,KAAK,OAAO,EACb,MAAM,iBAAiB,CAAC;AASzB,eAAO,MAAM,mBAAmB,EAAE,OAAO,CAAC;IACxC,KAAK,CAAC,EAAE,KAAK,CAAC;IACd,MAAM,EAAE,oBAAoB,CAAC;IAC7B,IAAI,CAAC,EAAE,SAAS,GAAG,OAAO,CAAC;CAC5B,CAkCA,CAAC"}

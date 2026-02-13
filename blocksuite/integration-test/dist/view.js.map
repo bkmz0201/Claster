@@ -1,0 +1,1 @@
+{"version":3,"file":"view.js","sourceRoot":"","sources":["../src/view.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,oBAAoB,EAAE,MAAM,+BAA+B,CAAC;AACrE,OAAO,EAAE,yBAAyB,EAAE,MAAM,oCAAoC,CAAC;AAE/E,MAAM,OAAO,GAAG,IAAI,oBAAoB,CAAC,yBAAyB,EAAE,CAAC,CAAC;AAEtE,MAAM,UAAU,kBAAkB;IAChC,OAAO,OAAO,CAAC;AACjB,CAAC"}

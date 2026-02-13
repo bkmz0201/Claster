@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../src/drop-indicator/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,kBAAkB,CAAC;AACjD,OAAO,EAEL,uBAAuB,EACvB,iBAAiB,GAElB,MAAM,qBAAqB,CAAC;AAE7B,OAAO,EAAE,aAAa,EAAE,CAAC;AAEzB,MAAM,UAAU,OAAO;IACrB,cAAc,CAAC,MAAM,CAAC,uBAAuB,EAAE,aAAa,CAAC,CAAC;AAChE,CAAC"}

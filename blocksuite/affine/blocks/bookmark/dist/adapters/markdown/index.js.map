@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/adapters/markdown/index.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,qCAAqC,EAAE,MAAM,eAAe,CAAC;AACtE,OAAO,EAAE,0CAA0C,EAAE,MAAM,mBAAmB,CAAC;AAE/E,cAAc,eAAe,CAAC;AAC9B,cAAc,mBAAmB,CAAC;AAElC,MAAM,CAAC,MAAM,sCAAsC,GAAoB;IACrE,0CAA0C;IAC1C,qCAAqC;CACtC,CAAC"}

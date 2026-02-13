@@ -1,0 +1,1 @@
+{"version":3,"file":"workspace-invoices.js","sourceRoot":"","sources":["../../../../src/modules/cloud/services/workspace-invoices.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,iBAAiB,EAAE,MAAM,gCAAgC,CAAC;AAEnE,MAAM,OAAO,wBAAyB,SAAQ,OAAO;IAArD;;QACE,aAAQ,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CAAC,iBAAiB,CAAC,CAAC;IAC5D,CAAC;CAAA"}

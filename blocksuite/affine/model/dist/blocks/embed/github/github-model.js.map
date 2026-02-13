@@ -1,0 +1,1 @@
+{"version":3,"file":"github-model.js","sourceRoot":"","sources":["../../../../src/blocks/embed/github/github-model.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,mBAAmB,CAAC;AAG/C,OAAO,EAAE,gBAAgB,EAAE,MAAM,yBAAyB,CAAC;AAY3D,MAAM,CAAC,MAAM,iBAAiB,GAAG;IAC/B,UAAU;IACV,YAAY;IACZ,MAAM;IACN,MAAM;CAC6B,CAAC;AAYtC,MAAM,OAAO,gBAAiB,SAAQ,gBAAgB,CACpD,UAAU,CACX;CAAG"}

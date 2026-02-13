@@ -1,0 +1,1 @@
+{"version":3,"file":"eraser-tool-button.d.ts","sourceRoot":"","sources":["../../../../src/toolbar/components/eraser/eraser-tool-button.ts"],"names":[],"mappings":"AAGA,OAAO,EAAa,UAAU,EAAE,MAAM,KAAK,CAAC;AAE5C,OAAO,EAAE,UAAU,EAAE,MAAM,sBAAsB,CAAC;;AAGlD,qBAAa,wBAAyB,SAAQ,6BAE7C;IACC,OAAgB,MAAM,0BAqBpB;IAEO,sBAAsB,UAAQ;IAE9B,IAAI,oBAAc;IAElB,YAAY;IAeZ,MAAM;CAqBhB"}

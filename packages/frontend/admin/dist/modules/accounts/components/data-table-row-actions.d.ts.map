@@ -1,0 +1,1 @@
+{"version":3,"file":"data-table-row-actions.d.ts","sourceRoot":"","sources":["../../../../src/modules/accounts/components/data-table-row-actions.tsx"],"names":[],"mappings":"AAmBA,OAAO,KAAK,EAAE,QAAQ,EAAE,MAAM,WAAW,CAAC;AAc1C,UAAU,wBAAwB;IAChC,IAAI,EAAE,QAAQ,CAAC;CAChB;AAED,wBAAgB,mBAAmB,CAAC,EAAE,IAAI,EAAE,EAAE,wBAAwB,2CAoNrE"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"dialog.d.ts","sourceRoot":"","sources":["../../../../src/mobile/components/rename/dialog.tsx"],"names":[],"mappings":"AAMA,OAAO,KAAK,EAAE,iBAAiB,EAAE,MAAM,QAAQ,CAAC;AAEhD,eAAO,MAAM,YAAY,GAAI,8DAO1B,iBAAiB,GAAG;IACrB,IAAI,CAAC,EAAE,OAAO,CAAC;IACf,YAAY,CAAC,EAAE,CAAC,CAAC,EAAE,OAAO,KAAK,IAAI,CAAC;CACrC,4CA8BA,CAAC"}

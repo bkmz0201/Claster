@@ -1,0 +1,1 @@
+{"version":3,"file":"edgeless-clipboard-config.d.ts","sourceRoot":"","sources":["../src/edgeless-clipboard-config.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,kCAAkC,CAAC;AAC3E,OAAO,EAAE,KAAK,aAAa,EAAE,MAAM,mBAAmB,CAAC;AAEvD,qBAAa,iCAAkC,SAAQ,uBAAuB;IAC5E,gBAAyB,GAAG,uBAAuB;IAEpC,WAAW,CACxB,UAAU,EAAE,aAAa,GACxB,OAAO,CAAC,MAAM,GAAG,IAAI,CAAC;CAyB1B"}

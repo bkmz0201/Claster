@@ -1,0 +1,1 @@
+{"version":3,"file":"convert.js","sourceRoot":"","sources":["../../../src/core/property/convert.ts"],"names":[],"mappings":"AAgBA,MAAM,CAAC,MAAM,qBAAqB,GAAG,CAInC,IAAU,EACV,EAAM,EACN,OAAkC,EAClC,EAAE;IACF,OAAO;QACL,IAAI,EAAE,IAAI,CAAC,IAAI;QACf,EAAE,EAAE,EAAE,CAAC,IAAI;QACX,OAAO;KACR,CAAC;AACJ,CAAC,CAAC"}

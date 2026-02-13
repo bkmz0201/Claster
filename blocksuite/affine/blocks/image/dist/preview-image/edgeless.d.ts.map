@@ -1,0 +1,1 @@
+{"version":3,"file":"edgeless.d.ts","sourceRoot":"","sources":["../../src/preview-image/edgeless.ts"],"names":[],"mappings":"AAIA,OAAO,EAAE,8BAA8B,EAAE,MAAM,WAAW,CAAC;;AAE3D,qBAAa,sCAAuC,SAAQ,2CAE3D;IACC,OAAgB,MAAM,0BAKpB;IAEO,cAAc,IAAI,OAAO;CAGnC;AAED,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,2CAA2C,EAAE,sCAAsC,CAAC;KACrF;CACF"}

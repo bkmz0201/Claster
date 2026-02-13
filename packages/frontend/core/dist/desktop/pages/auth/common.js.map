@@ -1,0 +1,1 @@
+{"version":3,"file":"common.js","sourceRoot":"","sources":["../../../../src/desktop/pages/auth/common.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,MAAM,CAAC,MAAM,eAAe,GAAG,CAAC,CAAC,IAAI,CAAC;IACpC,KAAK;IACL,QAAQ;IACR,eAAe;IACf,aAAa;IACb,GAAG,CAAC,YAAY,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,YAAY,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC;CAC9C,CAAC,CAAC"}

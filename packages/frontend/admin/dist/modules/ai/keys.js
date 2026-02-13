@@ -1,0 +1,13 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Button } from '@affine/admin/components/ui/button';
+import { Input } from '@affine/admin/components/ui/input';
+import { Label } from '@affine/admin/components/ui/label';
+import { Separator } from '@affine/admin/components/ui/separator';
+import { useState } from 'react';
+export function Keys() {
+    const [openAIKey, setOpenAIKey] = useState('');
+    const [falAIKey, setFalAIKey] = useState('');
+    const [unsplashKey, setUnsplashKey] = useState('');
+    return (_jsxs("div", { className: "flex flex-col h-full gap-3 py-5 px-6 w-full", children: [_jsx("div", { className: "flex items-center", children: _jsx("span", { className: "text-xl font-semibold", children: "Keys" }) }), _jsx("div", { className: "flex-grow overflow-y-auto space-y-[10px]", children: _jsxs("div", { className: "flex flex-col rounded-md border py-4 gap-4", children: [_jsxs("div", { className: "px-5 space-y-3", children: [_jsx(Label, { className: "text-sm font-medium", children: "OpenAI Key" }), _jsxs("div", { className: "flex items-center gap-2", children: [_jsx(Input, { type: "text", className: "py-2 px-3 text-base font-normal placeholder:opacity-50", value: openAIKey, placeholder: "sk-xxxxxxxxxxxxx-xxxxxxxxxxxxxx", onChange: e => setOpenAIKey(e.target.value) }), _jsx(Button, { disabled: true, children: "Save" })] })] }), _jsx(Separator, {}), _jsxs("div", { className: "px-5 space-y-3", children: [_jsx(Label, { className: "text-sm font-medium", children: "Fal.AI Key" }), _jsxs("div", { className: "flex items-center gap-2", children: [_jsx(Input, { type: "email", className: "py-2 px-3 ext-base font-normal placeholder:opacity-50", value: falAIKey, placeholder: "00000000-0000-0000-00000000:xxxxxxxxxxxxxxxxx", onChange: e => setFalAIKey(e.target.value) }), _jsx(Button, { disabled: true, children: "Save" })] })] }), _jsx(Separator, {}), _jsxs("div", { className: "px-5 space-y-3", children: [_jsx(Label, { className: "text-sm font-medium", children: "Unsplash Key" }), _jsxs("div", { className: "flex items-center gap-2", children: [_jsx(Input, { type: "password", className: "py-2 px-3 ext-base font-normal placeholder:opacity-50", value: unsplashKey, placeholder: "00000000-0000-0000-00000000:xxxxxxxxxxxxxxxxx", onChange: e => setUnsplashKey(e.target.value) }), _jsx(Button, { disabled: true, children: "Save" })] })] }), _jsx(Separator, {}), _jsx("div", { className: "px-5 space-y-3 text-sm font-normal text-gray-500", children: "Custom API keys may not perform as expected. AFFiNE does not guarantee results when using custom API keys." })] }) })] }));
+}
+//# sourceMappingURL=keys.js.map

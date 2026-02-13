@@ -1,0 +1,1 @@
+{"version":3,"file":"callout-to-paragraph.d.ts","sourceRoot":"","sources":["../../src/commands/callout-to-paragraph.ts"],"names":[],"mappings":"AAMA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,iBAAiB,CAAC;AAI/C,eAAO,MAAM,yBAAyB,EAAE,OAAO,CAC7C;IACE,EAAE,EAAE,MAAM,CAAC;IACX,aAAa,CAAC,EAAE,OAAO,CAAC;CACzB,EACD;IACE,OAAO,EAAE,OAAO,CAAC;CAClB,CAoEF,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"navigator.js","sourceRoot":"","sources":["../../../../src/modules/navigation/services/navigator.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,EAAE,SAAS,EAAE,MAAM,uBAAuB,CAAC;AAElD,MAAM,OAAO,gBAAiB,SAAQ,OAAO;IAA7C;;QACkB,cAAS,GAAG,IAAI,CAAC,SAAS,CAAC,YAAY,CAAC,SAAS,CAAC,CAAC;IACrE,CAAC;CAAA"}

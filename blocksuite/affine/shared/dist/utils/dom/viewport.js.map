@@ -1,0 +1,1 @@
+{"version":3,"file":"viewport.js","sourceRoot":"","sources":["../../../src/utils/dom/viewport.ts"],"names":[],"mappings":"AAEA;;;;;;;;;;GAUG;AACH,MAAM,UAAU,kBAAkB,CAAC,UAAsB;IACvD,OAAO,CACL,UAAU,CAAC,OAAO,CAAc,uBAAuB,CAAC;QACxD,UAAU,CAAC,OAAO,CAAc,2BAA2B,CAAC,CAC7D,CAAC;AACJ,CAAC"}

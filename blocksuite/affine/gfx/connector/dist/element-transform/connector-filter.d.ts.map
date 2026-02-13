@@ -1,0 +1,1 @@
+{"version":3,"file":"connector-filter.d.ts","sourceRoot":"","sources":["../../src/element-transform/connector-filter.ts"],"names":[],"mappings":"AACA,OAAO,EAEL,sBAAsB,EACvB,MAAM,qBAAqB,CAAC;AAE7B,qBAAa,eAAgB,SAAQ,sBAAsB;IACzD,OAAgB,GAAG,SAAsB;IAEhC,OAAO;CAkCjB"}

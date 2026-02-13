@@ -1,0 +1,1 @@
+{"version":3,"file":"accept-invite-page.d.ts","sourceRoot":"","sources":["../../../../src/components/member-components/accept-invite-page.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,kBAAkB,EAAE,MAAM,iBAAiB,CAAC;AAM1D,eAAO,MAAM,gBAAgB,GAAI,kCAG9B;IACD,eAAe,EAAE,MAAM,IAAI,CAAC;IAC5B,UAAU,EAAE,kBAAkB,CAAC,eAAe,CAAC,CAAC;CACjD,4CAoCA,CAAC"}

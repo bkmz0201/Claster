@@ -1,0 +1,1 @@
+{"version":3,"file":"effects.d.ts","sourceRoot":"","sources":["../src/effects.ts"],"names":[],"mappings":"AAAA,OAAO,EACL,0BAA0B,EAE1B,sBAAsB,EAEvB,MAAM,YAAY,CAAC;AAEpB,wBAAgB,OAAO,SAGtB;AAYD,OAAO,CAAC,MAAM,CAAC;IACb,UAAU,qBAAqB;QAC7B,sBAAsB,EAAE,0BAA0B,CAAC;QACnD,kBAAkB,EAAE,sBAAsB,CAAC;KAC5C;CACF"}

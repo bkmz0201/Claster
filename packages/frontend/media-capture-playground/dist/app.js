@@ -1,0 +1,8 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { AppList } from './components/app-list';
+import { GlobalRecordButton } from './components/global-record-button';
+import { SavedRecordings } from './components/saved-recordings';
+export function App() {
+    return (_jsx("div", { className: "h-screen bg-gray-50 overflow-hidden", children: _jsxs("div", { className: "h-full p-4 flex gap-4 max-w-[1800px] mx-auto", children: [_jsxs("div", { className: "flex-1 flex flex-col min-h-0", children: [_jsxs("div", { className: "flex justify-between items-center mb-1", children: [_jsx("h1", { className: "text-xl font-bold text-gray-900", children: "Running Applications" }), _jsx(GlobalRecordButton, {})] }), _jsx("p", { className: "text-sm text-gray-500 mb-2", children: "Select an application to start recording its audio, or use global recording for system-wide audio" }), _jsx("div", { className: "flex-1 bg-white shadow-lg rounded-lg border border-gray-100 overflow-auto", children: _jsx(AppList, {}) })] }), _jsxs("div", { className: "w-[1024px] flex flex-col min-h-0", children: [_jsx("h1", { className: "text-xl font-bold text-gray-900 mb-1", children: "Saved Recordings" }), _jsx("p", { className: "text-sm text-gray-500 mb-2", children: "Listen to and manage your recorded audio files" }), _jsx("div", { className: "flex-1 bg-white shadow-lg rounded-lg border border-gray-100 p-4 overflow-auto", children: _jsx(SavedRecordings, {}) })] })] }) }));
+}
+//# sourceMappingURL=app.js.map

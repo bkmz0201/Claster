@@ -1,0 +1,1 @@
+{"version":3,"file":"drag.d.ts","sourceRoot":"","sources":["../../src/utils/drag.ts"],"names":[],"mappings":"AAAA,MAAM,MAAM,cAAc,GAAG;IAC3B,IAAI,EAAE,UAAU,CAAC;IACjB,MAAM,EAAE,MAAM,CAAC;CAChB,CAAC;AAEF,MAAM,MAAM,eAAe,GAAG;IAC5B,MAAM,EAAE,MAAM,CAAC;CAChB,CAAC"}

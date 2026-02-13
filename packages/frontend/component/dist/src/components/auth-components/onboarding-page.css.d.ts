@@ -1,0 +1,22 @@
+export declare const layout: string;
+export declare const header: string;
+export declare const footer: string;
+export declare const scrollableContainer: string;
+export declare const onboardingContainer: string;
+export declare const content: string;
+export declare const question: string;
+export declare const optionsWrapper: string;
+export declare const buttonWrapper: string;
+export declare const checkBox: string;
+export declare const label: string;
+export declare const input: string;
+export declare const button: string;
+export declare const openAFFiNEButton: string;
+export declare const disableButton: string;
+export declare const windowsAppButton: string;
+export declare const thankContainer: string;
+export declare const thankTitle: string;
+export declare const thankText: string;
+export declare const linkGroup: string;
+export declare const link: string;
+//# sourceMappingURL=onboarding-page.css.d.ts.map

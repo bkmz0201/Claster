@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../src/modules/userspace/schema/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAwB,CAAC,EAAE,MAAM,qBAAqB,CAAC;AAE9D,MAAM,CAAC,MAAM,cAAc,GAAG;IAC5B,aAAa,EAAE;QACb,GAAG,EAAE,CAAC,CAAC,MAAM,EAAE,CAAC,UAAU,EAAE;QAC5B,KAAK,EAAE,CAAC,CAAC,MAAM,EAAE;KAClB;CACiC,CAAC"}

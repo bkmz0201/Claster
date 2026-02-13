@@ -1,0 +1,31 @@
+export * from './i18next';
+export * from './react';
+export * from './resources';
+export * from './utils';
+export declare const i18nCompletenesses: {
+    ar: number;
+    ca: number;
+    da: number;
+    de: number;
+    "el-GR": number;
+    en: number;
+    "es-AR": number;
+    "es-CL": number;
+    es: number;
+    fa: number;
+    fr: number;
+    hi: number;
+    "it-IT": number;
+    it: number;
+    ja: number;
+    ko: number;
+    pl: number;
+    "pt-BR": number;
+    ru: number;
+    "sv-SE": number;
+    uk: number;
+    ur: number;
+    "zh-Hans": number;
+    "zh-Hant": number;
+};
+//# sourceMappingURL=index.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"animated-play-icon.d.ts","sourceRoot":"","sources":["../../../../src/ui/lottie/animated-play-icon.tsx"],"names":[],"mappings":"AASA,MAAM,WAAW,qBAAqB;IACpC,KAAK,EAAE,MAAM,GAAG,OAAO,CAAC;IACxB,SAAS,CAAC,EAAE,MAAM,CAAC;IACnB,OAAO,CAAC,EAAE,CAAC,CAAC,EAAE,KAAK,CAAC,UAAU,KAAK,IAAI,CAAC;CACzC;AAoDD,eAAO,MAAM,gBAAgB,GAAI,wCAI9B,qBAAqB,4CAKvB,CAAC"}

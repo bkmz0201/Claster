@@ -1,0 +1,1 @@
+{"version":3,"file":"edgeless-clipboard-config.d.ts","sourceRoot":"","sources":["../../src/embed-figma-block/edgeless-clipboard-config.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,uBAAuB,EAAE,MAAM,kCAAkC,CAAC;AAC3E,OAAO,EAAE,KAAK,aAAa,EAAE,MAAM,mBAAmB,CAAC;AAEvD,qBAAa,iCAAkC,SAAQ,uBAAuB;IAC5E,gBAAyB,GAAG,wBAAwB;IAE3C,WAAW,CAAC,UAAU,EAAE,aAAa,GAAG,MAAM,GAAG,IAAI;CAkB/D"}

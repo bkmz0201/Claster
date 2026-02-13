@@ -1,0 +1,1 @@
+{"version":3,"file":"nav-item.d.ts","sourceRoot":"","sources":["../../../src/modules/nav/nav-item.tsx"],"names":[],"mappings":"AAKA,UAAU,YAAY;IACpB,IAAI,EAAE,KAAK,CAAC,SAAS,CAAC;IACtB,KAAK,EAAE,MAAM,CAAC;IACd,EAAE,EAAE,MAAM,CAAC;IACX,QAAQ,CAAC,EAAE,OAAO,CAAC;IACnB,WAAW,CAAC,EAAE,OAAO,CAAC;CACvB;AAED,eAAO,MAAM,OAAO,GAAI,kCAAkC,YAAY,4CAgDrE,CAAC"}

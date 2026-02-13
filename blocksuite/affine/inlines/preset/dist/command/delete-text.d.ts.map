@@ -1,0 +1,1 @@
+{"version":3,"file":"delete-text.d.ts","sourceRoot":"","sources":["../../src/command/delete-text.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,KAAK,OAAO,EAAE,aAAa,EAAE,MAAM,iBAAiB,CAAC;AAG9D,eAAO,MAAM,iBAAiB,EAAE,OAAO,CAAC;IACtC,oBAAoB,CAAC,EAAE,aAAa,CAAC;IACrC,aAAa,CAAC,EAAE,aAAa,CAAC;CAC/B,CAwEA,CAAC"}

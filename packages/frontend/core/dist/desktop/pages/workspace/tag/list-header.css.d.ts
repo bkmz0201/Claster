@@ -1,0 +1,23 @@
+export declare const header: string;
+export declare const breadcrumb: string;
+export declare const breadcrumbItem: string;
+export declare const breadcrumbLink: string;
+export declare const breadcrumbIcon: string;
+export declare const breadcrumbSeparator: string;
+export declare const headerActions: string;
+export declare const tagSelectorTrigger: string;
+export declare const tagSelectorTriggerIcon: string;
+export declare const tagSelectorTriggerName: string;
+export declare const tagSelectorTriggerDropdown: string;
+export declare const tagSelectorMenuRoot: string;
+export declare const tagSelectorMenuHeader: string;
+export declare const tagSelectorMenuSearchIcon: string;
+export declare const tagSelectorMenuScrollArea: string;
+export declare const tagSelectorMenuViewport: string;
+export declare const tagSelectorMenuEmpty: string;
+export declare const tagSelectorMenuItem: string;
+export declare const tagSelectorItem: string;
+export declare const tagSelectorItemIcon: string;
+export declare const tagSelectorItemText: string;
+export declare const tagSelectorItemCheckedIcon: string;
+//# sourceMappingURL=list-header.css.d.ts.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"rect.js","sourceRoot":"","sources":["../../../../../src/core/utils/wc-dnd/utils/rect.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,MAAM,UAAU,aAAa,CAAC,OAAgB;IAC5C,MAAM,EAAE,GAAG,EAAE,IAAI,EAAE,KAAK,EAAE,MAAM,EAAE,MAAM,EAAE,KAAK,EAAE,GAC/C,OAAO,CAAC,qBAAqB,EAAE,CAAC;IAElC,OAAO;QACL,GAAG;QACH,IAAI;QACJ,KAAK;QACL,MAAM;QACN,MAAM;QACN,KAAK;KACN,CAAC;AACJ,CAAC"}

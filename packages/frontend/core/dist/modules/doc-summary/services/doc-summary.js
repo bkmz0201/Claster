@@ -1,0 +1,86 @@
+import { effect, fromPromise, Service, smartRetry } from '@toeverything/infra';
+import { catchError, EMPTY, Observable, tap } from 'rxjs';
+export class DocSummaryService extends Service {
+    constructor(workspaceService, store, featureFlagService) {
+        super();
+        this.workspaceService = workspaceService;
+        this.store = store;
+        this.featureFlagService = featureFlagService;
+        this.docSummaryCache = new Map();
+        this.revalidateDocSummaryFromCloud = effect((source$) => {
+            // make a lifo queue
+            const queue = [];
+            let currentTask;
+            const processTask = () => {
+                if (currentTask) {
+                    return;
+                }
+                const docId = queue.pop();
+                if (!docId) {
+                    return;
+                }
+                currentTask = fromPromise(this.store.getDocSummaryFromCloud(docId))
+                    .pipe(smartRetry(), tap(summary => {
+                    if (summary) {
+                        this.store.setDocSummaryCache(docId, summary).catch(error => {
+                            console.error(error);
+                            // ignore error
+                        });
+                    }
+                }), catchError(error => {
+                    console.error(error);
+                    // ignore error
+                    return EMPTY;
+                }))
+                    .subscribe({
+                    complete() {
+                        currentTask = undefined;
+                        processTask();
+                    },
+                });
+            };
+            return new Observable(subscriber => {
+                const sub = source$.subscribe({
+                    next: value => {
+                        queue.push(value);
+                        processTask();
+                    },
+                    complete: () => {
+                        subscriber.complete();
+                    },
+                });
+                return () => {
+                    sub.unsubscribe();
+                    currentTask?.unsubscribe();
+                };
+            });
+        });
+    }
+    watchDocSummary(docId) {
+        const cached$ = this.docSummaryCache.get(docId);
+        if (!cached$) {
+            const ob$ = new Observable(subscribe => {
+                if (this.workspaceService.workspace.flavour === 'local' ||
+                    this.featureFlagService.flags.enable_battery_save_mode.value === false) {
+                    // use local indexer
+                    const sub = this.store
+                        .watchDocSummaryFromIndexer(docId)
+                        .subscribe(subscribe);
+                    return () => sub.unsubscribe();
+                }
+                // use cache, and revalidate from cloud
+                const sub = this.store.watchDocSummaryCache(docId).subscribe(subscribe);
+                this.revalidateDocSummaryFromCloud(docId);
+                return () => sub.unsubscribe();
+            });
+            this.docSummaryCache.set(docId, ob$);
+            return ob$;
+        }
+        return cached$;
+    }
+    dispose() {
+        this.revalidateDocSummaryFromCloud.unsubscribe();
+        super.dispose();
+    }
+}
+//# sourceMappingURL=doc-summary.js.map

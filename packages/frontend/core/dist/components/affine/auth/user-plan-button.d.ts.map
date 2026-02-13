@@ -1,0 +1,1 @@
+{"version":3,"file":"user-plan-button.d.ts","sourceRoot":"","sources":["../../../../src/components/affine/auth/user-plan-button.tsx"],"names":[],"mappings":"AAIA,OAAO,EAAE,KAAK,cAAc,EAAa,MAAM,OAAO,CAAC;AAKvD,eAAO,MAAM,cAAc,GAAI,cAE5B;IACD,OAAO,EAAE,CAAC,CAAC,EAAE,cAAc,CAAC,OAAO,EAAE,KAAK,CAAC,KAAK,IAAI,CAAC;CACtD,wDA+CA,CAAC"}

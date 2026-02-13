@@ -1,0 +1,1 @@
+{"version":3,"file":"workspace-server.d.ts","sourceRoot":"","sources":["../../../../src/modules/cloud/services/workspace-server.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC;AAE9C,OAAO,KAAK,EAAE,MAAM,EAAE,MAAM,oBAAoB,CAAC;AAEjD,qBAAa,sBAAuB,SAAQ,OAAO;IACjD,MAAM,EAAE,MAAM,GAAG,IAAI,CAAQ;IAE7B,UAAU,CAAC,MAAM,EAAE,MAAM;CAG1B"}

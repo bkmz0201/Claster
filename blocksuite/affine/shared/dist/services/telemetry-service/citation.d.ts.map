@@ -1,0 +1,1 @@
+{"version":3,"file":"citation.d.ts","sourceRoot":"","sources":["../../../src/services/telemetry-service/citation.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,SAAS,CAAC;AAC9C,MAAM,MAAM,iBAAiB,GACzB,uBAAuB,GACvB,wBAAwB,GACxB,kBAAkB,GAClB,gBAAgB,CAAC;AAErB,MAAM,MAAM,cAAc,GAAG,MAAM,CAAC,iBAAiB,EAAE,cAAc,CAAC,CAAC"}

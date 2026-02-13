@@ -1,0 +1,1 @@
+{"version":3,"file":"effect.js","sourceRoot":"","sources":["../../../../src/view-presets/table/stats/effect.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,mBAAmB,EAAE,MAAM,uBAAuB,CAAC;AAC5D,OAAO,EAAE,uBAAuB,EAAE,MAAM,0BAA0B,CAAC;AAEnE,MAAM,UAAU,YAAY;IAC1B,cAAc,CAAC,MAAM,CAAC,8BAA8B,EAAE,mBAAmB,CAAC,CAAC;IAC3E,cAAc,CAAC,MAAM,CACnB,mCAAmC,EACnC,uBAAuB,CACxB,CAAC;AACJ,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"native-paywall.d.ts","sourceRoot":"","sources":["../../../../src/modules/paywall/providers/native-paywall.ts"],"names":[],"mappings":"AAEA,MAAM,WAAW,qBAAqB;IACpC,WAAW,CAAC,IAAI,EAAE,KAAK,GAAG,IAAI,GAAG,OAAO,CAAC,IAAI,CAAC,CAAC;CAChD;AAED,eAAO,MAAM,qBAAqB,0JAEjC,CAAC"}

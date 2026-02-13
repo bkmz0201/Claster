@@ -1,0 +1,21 @@
+export declare const storageProgressContainer: string;
+export declare const storageProgressWrapper: string;
+export declare const storageProgressBar: string;
+export declare const blobManagementControls: string;
+export declare const spacer: string;
+export declare const blobManagementName: string;
+export declare const blobManagementNameInactive: string;
+export declare const blobManagementContainer: string;
+export declare const blobPreviewGrid: string;
+export declare const blobCard: string;
+export declare const loadingContainer: string;
+export declare const empty: string;
+export declare const blobPreviewContainer: string;
+export declare const blobPreview: string;
+export declare const blobGridItemCheckbox: string;
+export declare const blobImagePreview: string;
+export declare const unknownBlobIcon: string;
+export declare const blobPreviewFooter: string;
+export declare const blobPreviewName: string;
+export declare const blobPreviewInfo: string;
+//# sourceMappingURL=style.css.d.ts.map

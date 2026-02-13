@@ -1,0 +1,519 @@
+import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { Avatar, IconButton, Loading, Menu, MenuItem, notify, useConfirmModal, } from '@affine/component';
+import { useGuard } from '@affine/core/components/guard';
+import { ServerService } from '@affine/core/modules/cloud';
+import { AuthService } from '@affine/core/modules/cloud/services/auth';
+import {} from '@affine/core/modules/comment/entities/doc-comment';
+import { CommentPanelService } from '@affine/core/modules/comment/services/comment-panel-service';
+import { DocCommentManagerService } from '@affine/core/modules/comment/services/doc-comment-manager';
+import { DocService } from '@affine/core/modules/doc';
+import { toDocSearchParams } from '@affine/core/modules/navigation';
+import { WorkbenchService } from '@affine/core/modules/workbench';
+import { copyTextToClipboard } from '@affine/core/utils/clipboard';
+import { i18nTime, useI18n } from '@affine/i18n';
+import { DoneIcon, FilterIcon, MoreHorizontalIcon } from '@blocksuite/icons/rc';
+import { useLiveData, useService, useServiceOptional, } from '@toeverything/infra';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { useAsyncCallback } from '../../hooks/affine-async-hooks';
+import { CommentEditor } from '../comment-editor';
+import * as styles from './style.css';
+const SortFilterButton = ({ filterState, onFilterChange, }) => {
+    const t = useI18n();
+    return (_jsx(Menu, { rootOptions: { modal: false }, items: _jsxs(_Fragment, { children: [_jsx(MenuItem, { checked: filterState.showResolvedComments, onSelect: () => onFilterChange('showResolvedComments', !filterState.showResolvedComments), children: t['com.affine.comment.filter.show-resolved']() }), _jsx(MenuItem, { checked: filterState.onlyMyReplies, onSelect: () => onFilterChange('onlyMyReplies', !filterState.onlyMyReplies), children: t['com.affine.comment.filter.only-my-replies']() }), _jsx(MenuItem, { checked: filterState.onlyCurrentMode, onSelect: () => onFilterChange('onlyCurrentMode', !filterState.onlyCurrentMode), children: t['com.affine.comment.filter.only-current-mode']() })] }), children: _jsx(IconButton, { icon: _jsx(FilterIcon, {}) }) }));
+};
+// ---------------------------------------------------------------------------
+// ActionMenu – reusable dropdown for comment / reply rows
+// ---------------------------------------------------------------------------
+const ActionMenu = ({ open, onOpenChange, canReply, canEdit, canDelete, canCopyLink, disabled, resolved, onReply, onEdit, onDelete, onCopyLink, }) => {
+    const t = useI18n();
+    return (_jsx(Menu, { rootOptions: {
+            open,
+            onOpenChange,
+        }, items: _jsxs(_Fragment, { children: [canReply ? (_jsx(MenuItem, { onClick: onReply, disabled: !!disabled || !!resolved, children: t['com.affine.comment.reply']() })) : null, canCopyLink ? (_jsx(MenuItem, { onClick: onCopyLink, disabled: disabled, children: t['com.affine.comment.copy-link']() })) : null, canEdit ? (_jsx(MenuItem, { onClick: onEdit, disabled: !!disabled || !!resolved, children: t['Edit']() })) : null, canDelete ? (_jsx(MenuItem, { onClick: onDelete, type: "danger", disabled: disabled, children: t['Delete']() })) : null] }), children: _jsx(IconButton, { className: styles.actionButton, variant: "solid", icon: _jsx(MoreHorizontalIcon, {}), disabled: disabled }) }));
+};
+const CommentRow = ({ user, snapshot, time, doc, autoFocus, onCommit, onCancel, attachments, onAttachmentsChange, uploadCommentAttachment, editorRefSetter, }) => {
+    if (snapshot) {
+        return (_jsxs("div", { "data-time": time, className: styles.readonlyCommentContainer, children: [_jsxs("div", { className: styles.userContainer, children: [_jsx(Avatar, { url: user.avatarUrl ?? null, size: 24 }), _jsx("div", { className: styles.userName, children: user.name }), time ? (_jsx("div", { className: styles.time, children: i18nTime(time, {
+                                absolute: { accuracy: 'minute' },
+                            }) })) : null] }), _jsx("div", { style: { marginLeft: '34px' }, children: _jsx(CommentEditor, { readonly: true, defaultSnapshot: snapshot, attachments: attachments }) })] }));
+    }
+    if (!doc) {
+        return null;
+    }
+    return (_jsxs("div", { className: styles.commentInputContainer, children: [_jsx("div", { className: styles.userContainer, children: _jsx(Avatar, { url: user.avatarUrl ?? null, size: 24 }) }), _jsx(CommentEditor, { ref: editorRefSetter, attachments: attachments, onAttachmentsChange: onAttachmentsChange, doc: doc, autoFocus: autoFocus, onCommit: onCommit, onCancel: onCancel, uploadCommentAttachment: uploadCommentAttachment })] }));
+};
+const CommentItem = ({ comment, entity, }) => {
+    const workbench = useService(WorkbenchService);
+    const serverService = useService(ServerService);
+    const highlighting = useLiveData(entity.commentHighlighted$) === comment.id;
+    const t = useI18n();
+    const { openConfirmModal } = useConfirmModal();
+    const session = useService(AuthService).session;
+    const account = useLiveData(session.account$);
+    const docId = entity.props.docId;
+    const canCreateComment = useGuard('Doc_Comments_Create', docId);
+    const canDeleteComment = useGuard('Doc_Comments_Delete', docId);
+    const canResolveComment = useGuard('Doc_Comments_Resolve', docId);
+    const pendingReply = useLiveData(entity.pendingReply$);
+    // Check if the pending reply belongs to this comment
+    const isReplyingToThisComment = pendingReply?.commentId === comment.id;
+    const commentRef = useRef(null);
+    // Loading state for any async operation
+    const [isMutating, setIsMutating] = useState(false);
+    const editingDraft = useLiveData(entity.editingDraft$);
+    const isEditing = editingDraft?.type === 'comment' && editingDraft.id === comment.id;
+    const editingDoc = isEditing ? editingDraft.doc : undefined;
+    const [replyEditor, setReplyEditor] = useState(null);
+    const handleDelete = useAsyncCallback(async (e) => {
+        e.stopPropagation();
+        openConfirmModal({
+            title: t['com.affine.comment.delete.confirm.title'](),
+            description: t['com.affine.comment.delete.confirm.description'](),
+            confirmText: t['Delete'](),
+            cancelText: t['Cancel'](),
+            confirmButtonOptions: {
+                variant: 'error',
+            },
+            onConfirm: async () => {
+                setIsMutating(true);
+                try {
+                    await entity.deleteComment(comment.id);
+                }
+                finally {
+                    setIsMutating(false);
+                }
+            },
+        });
+    }, [entity, comment.id, openConfirmModal, t]);
+    const handleResolve = useAsyncCallback(async (e) => {
+        e.stopPropagation();
+        setIsMutating(true);
+        try {
+            await entity.resolveComment(comment.id, !comment.resolved);
+        }
+        finally {
+            setIsMutating(false);
+        }
+    }, [entity, comment.id, comment.resolved]);
+    const handleReply = useAsyncCallback(async () => {
+        if (comment.resolved)
+            return;
+        await entity.addReply(comment.id);
+        entity.highlightComment(comment.id);
+        if (replyEditor) {
+            // todo: it seems we need to wait for 1000ms
+            // to ensure the menu closing animation is complete
+            setTimeout(() => {
+                replyEditor.focus();
+            }, 1000);
+        }
+    }, [entity, comment.id, comment.resolved, replyEditor]);
+    const handleCopyLink = useAsyncCallback(async (e) => {
+        e.stopPropagation();
+        // Create a URL with the comment ID
+        if (!comment.content)
+            return;
+        const search = toDocSearchParams({
+            mode: comment.content.mode,
+            commentId: comment.id,
+        });
+        const url = new URL(workbench.workbench.basename$.value + '/' + entity.props.docId, serverService.server.baseUrl);
+        if (search?.size)
+            url.search = search.toString();
+        await copyTextToClipboard(url.toString());
+        notify.success({ title: t['Copied link to clipboard']() });
+    }, [
+        comment.content,
+        comment.id,
+        entity.props.docId,
+        serverService.server.baseUrl,
+        t,
+        workbench.workbench.basename$.value,
+    ]);
+    const handleCommitReply = useAsyncCallback(async () => {
+        if (!pendingReply?.id)
+            return;
+        setIsMutating(true);
+        try {
+            await entity.commitReply(pendingReply.id);
+        }
+        finally {
+            setIsMutating(false);
+        }
+    }, [entity, pendingReply]);
+    const handleCancelReply = useCallback(() => {
+        if (!pendingReply?.id)
+            return;
+        entity.dismissDraftReply();
+    }, [entity, pendingReply]);
+    const handleClick = useCallback(() => {
+        workbench.workbench.openDoc({
+            docId: entity.props.docId,
+            mode: comment.content?.mode,
+            commentId: comment.id,
+            refreshKey: 'comment-' + Date.now(),
+        }, {
+            replaceHistory: true,
+        });
+        entity.highlightComment(comment.id);
+    }, [comment.id, comment.content?.mode, entity, workbench.workbench]);
+    useEffect(() => {
+        const subscription = entity.commentHighlighted$
+            .pipe(debounceTime(0), distinctUntilChanged())
+            .subscribe(id => {
+            if (id === comment.id && commentRef.current) {
+                // Auto-start reply when comment becomes highlighted, but only if not resolved
+                if (!isReplyingToThisComment && !comment.resolved) {
+                    entity.addReply(comment.id).catch(() => {
+                        // Handle error if adding reply fails
+                        console.error('Failed to add reply for comment:', comment.id);
+                    });
+                }
+            }
+            else if (id !== comment.id &&
+                isReplyingToThisComment &&
+                pendingReply) {
+                // Cancel reply when comment is no longer highlighted
+                entity.dismissDraftReply();
+            }
+        });
+        return () => {
+            subscription.unsubscribe();
+        };
+    }, [
+        comment.id,
+        comment.resolved,
+        entity.commentHighlighted$,
+        isReplyingToThisComment,
+        pendingReply,
+        entity,
+    ]);
+    // Clean up pending reply if comment becomes resolved
+    useEffect(() => {
+        if (comment.resolved && isReplyingToThisComment && pendingReply) {
+            entity.dismissDraftReply();
+        }
+    }, [comment.resolved, isReplyingToThisComment, pendingReply, entity]);
+    const [menuOpen, setMenuOpen] = useState(false);
+    // Replies handled by ReplyList component; no local collapsed logic here.
+    const handleStartEdit = useAsyncCallback(async (e) => {
+        e.stopPropagation();
+        if (comment.resolved || !comment.content)
+            return;
+        await entity.startEdit(comment.id, 'comment', comment.content.snapshot, comment.content.attachments ?? []);
+    }, [entity, comment.id, comment.content, comment.resolved]);
+    const handleCommitEdit = useAsyncCallback(async () => {
+        setIsMutating(true);
+        try {
+            await entity.commitEditing();
+        }
+        finally {
+            setIsMutating(false);
+        }
+    }, [entity]);
+    const handleCancelEdit = useCallback(() => {
+        entity.dismissDraftEditing();
+    }, [entity]);
+    const isMyComment = account && account.id === comment.user.id;
+    const canReply = canCreateComment;
+    const canEdit = isMyComment && canCreateComment;
+    const canDelete = (isMyComment && canCreateComment) || (!isMyComment && canDeleteComment);
+    // invalid comment, should not happen
+    if (!comment.content) {
+        return null;
+    }
+    return (_jsxs("div", { onClick: handleClick, "data-comment-id": comment.id, "data-resolved": comment.resolved, "data-highlighting": highlighting || menuOpen, className: styles.commentItem, ref: commentRef, children: [_jsxs("div", { className: styles.commentActions, "data-menu-open": menuOpen, "data-editing": isEditing, children: [canResolveComment && (_jsx(IconButton, { className: styles.actionButton, variant: "solid", onClick: handleResolve, icon: _jsx(DoneIcon, {}), disabled: isMutating })), _jsx(ActionMenu, { open: menuOpen, onOpenChange: setMenuOpen, canReply: canReply, canCopyLink: true, canEdit: !!canEdit, canDelete: canDelete, disabled: isMutating, resolved: comment.resolved, onReply: handleReply, onCopyLink: handleCopyLink, onEdit: handleStartEdit, onDelete: handleDelete })] }), _jsx("div", { className: styles.previewContainer, children: comment.content?.preview }), _jsxs("div", { className: styles.repliesContainer, children: [isEditing && editingDoc ? (_jsx(CommentRow, { user: { avatarUrl: account?.avatar ?? null, name: '' }, doc: editingDoc, autoFocus: true, onCommit: isMutating ? undefined : handleCommitEdit, onCancel: isMutating ? undefined : handleCancelEdit, attachments: editingDraft.attachments, onAttachmentsChange: attachments => {
+                            entity.updateEditingDraft(editingDraft.id, {
+                                attachments,
+                            });
+                        }, uploadCommentAttachment: (id, file) => {
+                            return entity.uploadCommentAttachment(id, file, editingDraft);
+                        } })) : (_jsx(CommentRow, { user: {
+                            avatarUrl: comment.user.avatarUrl,
+                            name: comment.user.name,
+                        }, time: comment.createdAt, snapshot: comment.content.snapshot, attachments: comment.content?.attachments })), comment.replies && comment.replies.length > 0 && (_jsx(ReplyList, { replies: comment.replies, parentComment: comment, entity: entity, replyEditor: replyEditor }))] }), !editingDraft &&
+                highlighting &&
+                isReplyingToThisComment &&
+                pendingReply &&
+                account &&
+                !comment.resolved &&
+                canCreateComment && (_jsx(CommentRow, { user: { avatarUrl: account.avatar ?? null, name: '' }, doc: pendingReply.doc, autoFocus: true, editorRefSetter: setReplyEditor, onCommit: isMutating || !canCreateComment ? undefined : handleCommitReply, onCancel: isMutating ? undefined : handleCancelReply, attachments: pendingReply.attachments, onAttachmentsChange: attachments => {
+                    entity.updatePendingReply(pendingReply.id, {
+                        attachments,
+                    });
+                }, uploadCommentAttachment: (id, file) => {
+                    return entity.uploadCommentAttachment(id, file, pendingReply);
+                } }))] }));
+};
+const CommentList = ({ entity }) => {
+    const comments = useLiveData(entity.comments$);
+    const session = useService(AuthService).session;
+    const account = useLiveData(session.account$);
+    const t = useI18n();
+    const docMode = useLiveData(entity.docMode$);
+    // Filter state management
+    const [filterState, setFilterState] = useState({
+        showResolvedComments: false,
+        onlyMyReplies: false,
+        onlyCurrentMode: false,
+    });
+    const onFilterChange = useCallback((key, value) => {
+        setFilterState(prev => ({ ...prev, [key]: value }));
+    }, []);
+    // Filter and sort comments based on filter state
+    const filteredAndSortedComments = useMemo(() => {
+        let filteredComments = comments;
+        // Filter by resolved status
+        if (!filterState.showResolvedComments) {
+            filteredComments = filteredComments.filter(comment => !comment.resolved);
+        }
+        // Filter by only my replies and mentions
+        if (filterState.onlyMyReplies && account) {
+            filteredComments = filteredComments.filter(comment => {
+                return (comment.user.id === account.id ||
+                    comment.mentions.includes(account.id) ||
+                    comment.replies?.some(reply => {
+                        return (reply.user.id === account.id ||
+                            reply.mentions.includes(account.id));
+                    }));
+            });
+            filteredComments = filteredComments.map(comment => {
+                return {
+                    ...comment,
+                    replies: comment.replies?.filter(reply => {
+                        return (reply.user.id === account.id ||
+                            reply.mentions.includes(account.id));
+                    }),
+                };
+            });
+        }
+        // Filter by only current mode
+        if (filterState.onlyCurrentMode) {
+            filteredComments = filteredComments.filter(comment => {
+                return (!comment.content?.mode || !docMode || comment.content.mode === docMode);
+            });
+        }
+        return filteredComments.toSorted((a, b) => b.createdAt - a.createdAt);
+    }, [
+        comments,
+        filterState.showResolvedComments,
+        filterState.onlyMyReplies,
+        filterState.onlyCurrentMode,
+        docMode,
+        account,
+    ]);
+    const newPendingComment = useLiveData(entity.pendingComment$);
+    const loading = useLiveData(entity.loading$);
+    return (_jsxs(_Fragment, { children: [_jsxs("div", { className: styles.header, children: [_jsx("div", { className: styles.headerTitle, children: t['com.affine.comment.comments']() }), comments.length > 0 && (_jsx(SortFilterButton, { filterState: filterState, onFilterChange: onFilterChange }))] }), _jsx(CommentInput, { entity: entity }), filteredAndSortedComments.length === 0 &&
+                !newPendingComment &&
+                !loading && (_jsx("div", { className: styles.empty, children: t['com.affine.comment.no-comments']() })), loading &&
+                filteredAndSortedComments.length === 0 &&
+                !newPendingComment && (_jsx("div", { className: styles.loading, children: _jsx(Loading, { size: 32 }) })), _jsx("div", { className: styles.commentList, children: filteredAndSortedComments.map(comment => (_jsx(CommentItem, { comment: comment, entity: entity }, comment.id))) })] }));
+};
+// handling pending comment
+const CommentInput = ({ entity }) => {
+    const newPendingComment = useLiveData(entity.pendingComment$);
+    const pendingPreview = newPendingComment?.preview;
+    const [isMutating, setIsMutating] = useState(false);
+    const docId = entity.props.docId;
+    const canCreateComment = useGuard('Doc_Comments_Create', docId);
+    const handleCommit = useAsyncCallback(async () => {
+        if (!newPendingComment?.id)
+            return;
+        setIsMutating(true);
+        try {
+            await entity.commitComment(newPendingComment.id);
+        }
+        finally {
+            setIsMutating(false);
+        }
+    }, [entity, newPendingComment]);
+    const handleCancel = useCallback(() => {
+        if (!newPendingComment?.id)
+            return;
+        entity.dismissDraftComment();
+    }, [entity, newPendingComment]);
+    const session = useService(AuthService).session;
+    const account = useLiveData(session.account$);
+    if (!newPendingComment || !account || !canCreateComment) {
+        return null;
+    }
+    return (_jsxs("div", { className: styles.pendingComment, "data-pending-comment": true, children: [pendingPreview && (_jsx("div", { className: styles.previewContainer, children: pendingPreview })), _jsx(CommentRow, { user: { avatarUrl: account.avatar ?? null, name: '' }, doc: newPendingComment.doc, autoFocus: true, onCommit: isMutating || !canCreateComment ? undefined : handleCommit, onCancel: isMutating ? undefined : handleCancel, attachments: newPendingComment.attachments, onAttachmentsChange: attachments => {
+                    entity.updatePendingComment(newPendingComment.id, {
+                        attachments,
+                    });
+                }, uploadCommentAttachment: (id, file) => {
+                    return entity.uploadCommentAttachment(id, file, newPendingComment);
+                } })] }));
+};
+const ReplyItem = ({ reply, parentComment, entity, replyEditor, }) => {
+    const t = useI18n();
+    const session = useService(AuthService).session;
+    const account = useLiveData(session.account$);
+    const { openConfirmModal } = useConfirmModal();
+    const [isMutating, setIsMutating] = useState(false);
+    const editingDraft = useLiveData(entity.editingDraft$);
+    const isEditingThisReply = editingDraft?.type === 'reply' && editingDraft.id === reply.id;
+    const editingDoc = isEditingThisReply ? editingDraft.doc : undefined;
+    const docId = entity.props.docId;
+    const canCreateComment = useGuard('Doc_Comments_Create', docId);
+    const canDeleteComment = useGuard('Doc_Comments_Delete', docId);
+    const handleStartEdit = useAsyncCallback(async () => {
+        if (parentComment.resolved || !reply.content)
+            return;
+        await entity.startEdit(reply.id, 'reply', reply.content.snapshot, reply.content.attachments ?? []);
+    }, [entity, parentComment.resolved, reply.id, reply.content]);
+    const handleCommitEdit = useAsyncCallback(async () => {
+        setIsMutating(true);
+        try {
+            await entity.commitEditing();
+        }
+        finally {
+            setIsMutating(false);
+        }
+    }, [entity]);
+    const handleCancelEdit = useCallback(() => entity.dismissDraftEditing(), [entity]);
+    const handleDelete = useAsyncCallback(async () => {
+        openConfirmModal({
+            title: t['com.affine.comment.reply.delete.confirm.title'](),
+            description: t['com.affine.comment.reply.delete.confirm.description'](),
+            confirmText: t['Delete'](),
+            cancelText: t['Cancel'](),
+            confirmButtonOptions: {
+                variant: 'error',
+            },
+            onConfirm: async () => {
+                setIsMutating(true);
+                try {
+                    await entity.deleteReply(reply.id);
+                }
+                finally {
+                    setIsMutating(false);
+                }
+            },
+        });
+    }, [openConfirmModal, t, entity, reply.id]);
+    const handleReply = useAsyncCallback(async () => {
+        if (parentComment.resolved)
+            return;
+        await entity.addReply(parentComment.id, reply);
+        entity.highlightComment(parentComment.id);
+        if (replyEditor) {
+            // todo: find out why we need to wait for 100ms
+            setTimeout(() => {
+                replyEditor.focus();
+            }, 100);
+        }
+    }, [entity, parentComment.id, parentComment.resolved, reply, replyEditor]);
+    const isMyReply = account && account.id === reply.user.id;
+    const canReply = canCreateComment;
+    const canEdit = isMyReply && canCreateComment;
+    const canDelete = (isMyReply && canCreateComment) || (!isMyReply && canDeleteComment);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    // invalid reply, should not happen
+    if (!reply.content) {
+        return null;
+    }
+    return (_jsxs("div", { className: styles.replyItem, "data-reply-id": reply.id, children: [_jsx("div", { className: styles.replyActions, "data-menu-open": isMenuOpen, "data-editing": isEditingThisReply, children: _jsx(ActionMenu, { open: isMenuOpen, onOpenChange: setIsMenuOpen, canReply: canReply, canEdit: !!canEdit, canDelete: canDelete, disabled: isMutating, resolved: parentComment.resolved, onReply: handleReply, onEdit: handleStartEdit, onDelete: handleDelete }) }), isEditingThisReply && editingDoc ? (_jsx(CommentRow, { user: { avatarUrl: account?.avatar ?? null, name: '' }, doc: editingDoc, autoFocus: true, onCommit: isMutating ? undefined : handleCommitEdit, onCancel: isMutating ? undefined : handleCancelEdit, attachments: editingDraft.attachments, onAttachmentsChange: attachments => {
+                    entity.updateEditingDraft(editingDraft.id, {
+                        attachments,
+                    });
+                }, uploadCommentAttachment: (id, file) => {
+                    return entity.uploadCommentAttachment(id, file, editingDraft);
+                } })) : (_jsx(CommentRow, { user: {
+                    avatarUrl: reply.user.avatarUrl ?? null,
+                    name: reply.user.name,
+                }, time: reply.createdAt, snapshot: reply.content ? reply.content.snapshot : undefined, attachments: reply.content?.attachments }))] }));
+};
+const ReplyList = ({ replies, parentComment, entity, replyEditor, }) => {
+    const t = useI18n();
+    // When the comment item is rendered the first time, the replies will be collapsed by default
+    // The replies will be collapsed when replies length > 4, that is, the comment, first reply and the last 2 replies
+    // will be shown
+    // When new reply is added either by clicking the reply button or synced remotely, we will NOT collapse the replies
+    const [collapsed, setCollapsed] = useState((replies.length ?? 0) > 4);
+    const renderedReplies = useMemo(() => {
+        // Sort replies ascending by createdAt
+        const sortedReplies = replies.toSorted((a, b) => a.createdAt - b.createdAt) ?? [];
+        if (sortedReplies.length === 0)
+            return null;
+        // If not collapsed or replies are fewer than threshold, render all
+        if (!collapsed || sortedReplies.length <= 4) {
+            return sortedReplies.map(reply => (_jsx(ReplyItem, { reply: reply, parentComment: parentComment, entity: entity, replyEditor: replyEditor }, reply.id)));
+        }
+        // Collapsed state: first reply + collapsed indicator + last two replies
+        const firstReply = sortedReplies[0];
+        const tailReplies = sortedReplies.slice(-2);
+        return (_jsxs(_Fragment, { children: [_jsx(CommentRow, { user: {
+                        avatarUrl: firstReply.user.avatarUrl ?? null,
+                        name: firstReply.user.name,
+                    }, time: firstReply.createdAt, snapshot: firstReply.content ? firstReply.content.snapshot : undefined, attachments: firstReply.content?.attachments }), _jsx("div", { className: styles.collapsedReplies, onClick: e => {
+                        e.stopPropagation();
+                        setCollapsed(false);
+                    }, children: _jsx("div", { className: styles.collapsedRepliesTitle, children: t['com.affine.comment.reply.show-more']({
+                            count: (sortedReplies.length - 4).toString(),
+                        }) }) }), tailReplies.map(reply => (_jsx(ReplyItem, { reply: reply, parentComment: parentComment, entity: entity, replyEditor: replyEditor }, reply.id)))] }));
+    }, [collapsed, replies, t, entity, parentComment, replyEditor]);
+    return _jsx("div", { className: styles.repliesContainer, children: renderedReplies });
+};
+const useCommentEntity = (docId) => {
+    const docCommentManager = useService(DocCommentManagerService);
+    const commentPanelService = useService(CommentPanelService);
+    const [entity, setEntity] = useState(null);
+    useEffect(() => {
+        if (!docId) {
+            return;
+        }
+        const entityRef = docCommentManager.get(docId);
+        setEntity(entityRef.obj);
+        entityRef.obj.start();
+        // Set up pending comment watching to auto-open sidebar
+        const unwatchPending = commentPanelService.watchForPendingComments(entityRef.obj);
+        return () => {
+            unwatchPending();
+            entityRef.obj.stop();
+            entityRef.release();
+        };
+    }, [docCommentManager, commentPanelService, docId]);
+    return entity;
+};
+export const CommentSidebar = () => {
+    const doc = useServiceOptional(DocService)?.doc;
+    const entity = useCommentEntity(doc?.id);
+    const containerRef = useRef(null);
+    useEffect(() => {
+        const container = containerRef.current;
+        // dismiss the highlight when ESC is pressed
+        const handleKeyDown = (event) => {
+            if (event.key === 'Escape') {
+                entity?.highlightComment(null);
+                entity?.dismissDraftEditing();
+            }
+        };
+        const handleContainerClick = (event) => {
+            const target = event.target;
+            if (!target.closest('[data-comment-id]')) {
+                entity?.highlightComment(null);
+                entity?.dismissDraftEditing();
+            }
+            // if creating a new comment, dismiss the comment input
+            if (entity?.pendingComment$.value &&
+                !target.closest('[data-pending-comment]')) {
+                entity.dismissDraftComment();
+            }
+        };
+        document.addEventListener('keydown', handleKeyDown);
+        container?.addEventListener('click', handleContainerClick);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+            container?.removeEventListener('click', handleContainerClick);
+            entity?.highlightComment(null);
+        };
+    }, [entity]);
+    if (!entity) {
+        return null;
+    }
+    return (_jsx("div", { className: styles.container, ref: containerRef, children: _jsx(CommentList, { entity: entity }) }));
+};
+//# sourceMappingURL=index.js.map

@@ -1,0 +1,1 @@
+{"version":3,"file":"module.d.ts","sourceRoot":"","sources":["../../../src/services/toolbar-service/module.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,sBAAsB,EAAE,MAAM,iBAAiB,CAAC;AAE9D,OAAO,KAAK,EAAE,mBAAmB,EAAE,MAAM,UAAU,CAAC;AAEpD,MAAM,MAAM,aAAa,GAAG;IAC1B,QAAQ,CAAC,EAAE,EAAE,UAAU,CAAC,OAAO,sBAAsB,CAAC,CAAC;IAEvD,QAAQ,CAAC,MAAM,EAAE,mBAAmB,CAAC;CACtC,CAAC"}

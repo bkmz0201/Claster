@@ -1,0 +1,19 @@
+export declare const fakeWrapper: string;
+export declare const membersPanel: string;
+export declare const localMembersPanel: string;
+export declare const goUpgradeWrapper: string;
+export declare const goUpgrade: string;
+export declare const errorStyle: string;
+export declare const membersFallback: string;
+export declare const memberListItem: string;
+export declare const memberContainer: string;
+export declare const roleOrStatus: string;
+export declare const memberName: string;
+export declare const memberEmail: string;
+export declare const confirmAssignModalContent: string;
+export declare const descriptions: string;
+export declare const description: string;
+export declare const prefixDot: string;
+export declare const confirmInputContainer: string;
+export declare const importButton: string;
+//# sourceMappingURL=styles.css.d.ts.map

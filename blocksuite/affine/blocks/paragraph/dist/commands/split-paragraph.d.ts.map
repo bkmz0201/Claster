@@ -1,0 +1,1 @@
+{"version":3,"file":"split-paragraph.d.ts","sourceRoot":"","sources":["../../src/commands/split-paragraph.ts"],"names":[],"mappings":"AAMA,OAAO,EAAE,KAAK,OAAO,EAAiB,MAAM,iBAAiB,CAAC;AAE9D,eAAO,MAAM,qBAAqB,EAAE,OAAO,CACzC;IACE,OAAO,CAAC,EAAE,MAAM,CAAC;CAClB,EACD;IACE,oBAAoB,EAAE,MAAM,CAAC;CAC9B,CAkEF,CAAC"}

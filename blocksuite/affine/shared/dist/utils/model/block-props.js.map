@@ -1,0 +1,1 @@
+{"version":3,"file":"block-props.js","sourceRoot":"","sources":["../../../src/utils/model/block-props.ts"],"names":[],"mappings":"AAEA,MAAM,UAAU,aAAa,CAAC,KAAiB;IAC7C,MAAM,IAAI,GAAG,KAAK,CAAC,IAAoC,CAAC;IACxD,OAAO,MAAM,CAAC,WAAW,CAAC,IAAI,CAAC,GAAG,CAAC,GAAG,CAAC,EAAE,CAAC,CAAC,GAAG,EAAE,KAAK,CAAC,KAAK,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC,CAAC;AACtE,CAAC"}

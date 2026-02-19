@@ -1,45 +1,41 @@
-name: affine
+version: '3.8'
 services:
   affine:
     build:
       context: .
       dockerfile: ./docker/server.Dockerfile
-    image: ghcr.io/toeverything/affine:${AFFINE_REVISION:-local}
-    container_name: affine_server
+    image: affine-server-prod
+    container_name: affine_server_prod
     ports:
       - '${PORT:-3010}:3010'
+    env_file:
+      - .env.production
+    environment:
+      - REDIS_SERVER_HOST=redis
+      - DATABASE_URL=postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_DATABASE:-affine}
+      - AFFINE_INDEXER_ENABLED=false
+    volumes:
+      - ${UPLOAD_LOCATION}:/root/.affine/storage
+      - ${CONFIG_LOCATION}:/root/.affine/config
     depends_on:
       redis:
         condition: service_healthy
       postgres:
         condition: service_healthy
-      affine_migration:
-        condition: service_completed_successfully
-    volumes:
-      # custom configurations
-      - ${UPLOAD_LOCATION}:/root/.affine/storage
-      - ${CONFIG_LOCATION}:/root/.affine/config
-    env_file:
-      - .env
-    environment:
-      - REDIS_SERVER_HOST=redis
-      - DATABASE_URL=postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_DATABASE:-affine}
-      - AFFINE_INDEXER_ENABLED=false
     restart: unless-stopped
 
   affine_migration:
     build:
       context: .
       dockerfile: ./docker/server.Dockerfile
-    image: ghcr.io/toeverything/affine:${AFFINE_REVISION:-local}
+    image: affine-server-prod
     container_name: affine_migration_job
     volumes:
-      # custom configurations
       - ${UPLOAD_LOCATION}:/root/.affine/storage
       - ${CONFIG_LOCATION}:/root/.affine/config
-    command: ['sh', '-c', 'node ./scripts/self-host-predeploy.js']
+    command: ['sh', '-c', 'yarn predeploy']
     env_file:
-      - .env
+      - .env.production
     environment:
       - REDIS_SERVER_HOST=redis
       - DATABASE_URL=postgresql://${DB_USERNAME}:${DB_PASSWORD}@postgres:5432/${DB_DATABASE:-affine}
@@ -52,7 +48,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: affine_redis
+    container_name: affine_redis_prod
     healthcheck:
       test: ['CMD', 'redis-cli', '--raw', 'incr', 'ping']
       interval: 10s
@@ -62,7 +58,7 @@ services:
 
   postgres:
     image: pgvector/pgvector:pg16
-    container_name: affine_postgres
+    container_name: affine_postgres_prod
     volumes:
       - ${DB_DATA_LOCATION}:/var/lib/postgresql/data
     environment:
@@ -70,21 +66,10 @@ services:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_DATABASE:-affine}
       POSTGRES_INITDB_ARGS: '--data-checksums'
-      # you better set a password for you database
-      # or you may add 'POSTGRES_HOST_AUTH_METHOD=trust' to ignore postgres security policy
       POSTGRES_HOST_AUTH_METHOD: trust
     healthcheck:
-      test:
-        ['CMD', 'pg_isready', '-U', "${DB_USERNAME}", '-d', "${DB_DATABASE:-affine}"]
+      test: ['CMD', 'pg_isready', '-U', "${DB_USERNAME}", '-d', "${DB_DATABASE:-affine}"]
       interval: 10s
       timeout: 5s
       retries: 5
-    restart: unless-stopped
-
-  mailhog:
-    image: mailhog/mailhog:latest
-    container_name: affine_mailhog
-    ports:
-      - '1025:1025'
-      - '8025:8025'
     restart: unless-stopped
